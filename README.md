@@ -4,13 +4,14 @@
 
 ![IMG](./screens.gif)
 
+TODO: "Sparkle Heart Start" Menu v v v
 ![IMG](./src/assets/snap-of-start-heart.png)
 
-The software is experimental and *VERY* unstable at this time. System versions will be released alphabetically with ancient-greek inspired names. The first version will be called ["Antikythera"](https://en.wikipedia.org/wiki/Antikythera_mechanism).
+The software is experimental and *EXTREMELY* unstable/alpha at this time. System versions will be released alphabetically with ancient-greek inspired names. The first version will be called ["Antikythera"](https://en.wikipedia.org/wiki/Antikythera_mechanism).
 
 # User Personas
 
-TODO: Matthew to work with designer on branding each persona and what tooling and resources entail. Current personas are:
+TODO: Matthew to work with designer on branding each persona in a layperson format. Information should include what tooling and resources come with each persona. Current personas are:
 
 - General*
 - Gamer
@@ -18,7 +19,7 @@ TODO: Matthew to work with designer on branding each persona and what tooling an
 - Clinician
 - Creative
 
-_*(prereq - must be installed for system or other personas to work - will be abstracted away from the users soon)_
+_*(prereq - must be installed for System or other personas to work - will be abstracted away from the users soon)_
 
 _(ordered in terms of stability)_
 
@@ -26,23 +27,25 @@ _(ordered in terms of stability)_
 
 ## Install
 
+TODO: Partner with a USB Linux distro company to make this painless.
+
 1. Download Ubuntu MATE 18.04.1 LTS (Bionic): https://ubuntu-mate.org/download/
-2. Mount it on a USB stick for installation: https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0.
-3. Plug flashdrive in, restart computer, and ensure BIOS boot load order brings up the USB stick-Ubuntu for the install wizard process.
-4. Walk through the setup wizard.
-5. Once install, open up the MATE terminal and run:
+2. Mount it on a USB stick for installation: https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0
+3. Plug flashdrive in and restart computer to bring up the setup wizard
+4. Navigate through the setup wizard
+5. Once the Ubuntu MATE is installed, open up the MATE terminal and run the following:
 
 ```
 cd ~/Desktop
-git clone https://github.com/GoTeamEpsilon/system.git
-cd system/src
+git clone https://github.com/GoTeamEpsilon/System.git
+cd System/src
 ./main.sh
 ```
 
-6. Run the "general" persona installer to set up the operating system.
+6. Run the "general" persona installer to set up the base system.
 
 ```
-# cd ~/Desktop/system/src
+# cd ~/Desktop/System/src
 cd persona_installers
 
 ./general.sh
@@ -51,7 +54,7 @@ cd persona_installers
 7. Consider which personas you'd like to install and run the installers like so:
 
 ```
-# cd ~/Desktop/system/src
+# cd ~/Desktop/System/src
 cd persona_installers
 
 ./creative.sh
@@ -66,7 +69,7 @@ cd persona_installers
 
 ## Issues
 
-See issue tracker for project status and to discuss System 💖.
+See issue tracker for project statuses and to discuss System 💖.
 
 
 ## Devs
