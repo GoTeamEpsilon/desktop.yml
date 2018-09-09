@@ -3,7 +3,7 @@
 # System 💖: Computing with Heart #
 ###################################
 
-mv /home/`whoami`/Desktop/system/src/assets/easter_egg.mkv /home/`whoami`/Desktop/
+mv /home/`whoami`/Desktop/System/src/assets/easter_egg.mkv /home/`whoami`/Desktop/
 
 cd /home/`whoami`/Desktop
 
@@ -341,7 +341,7 @@ Encoding=UTF-8
 Name=${name}
 Type=Link
 URL=${url}
-Icon=/home/`whoami`/Desktop/system/src/assets/hyperlink-icon.png
+Icon=/home/`whoami`/Desktop/System/src/assets/hyperlink-icon.png
 " > /home/`whoami`/Desktop/${name}.desktop
 }
 
