@@ -29,9 +29,10 @@ sudo add-apt-repository -y ppa:gregory-hainaut/pcsx2.official.ppa
 sudo apt update -y
 sudo apt install -y pcsx2
 
-sudo add-apt-repository -y ppa:ppsspp/stable
-sudo apt update -y
-sudo apt install -y PPSSPP
+# TODO
+# sudo add-apt-repository -y ppa:ppsspp/stable
+# sudo apt update -y
+# sudo apt install -y PPSSPP
 
 sudo apt install -y torcs
 
@@ -39,9 +40,10 @@ sudo add-apt-repository -y ppa:saiarcot895/flightgear
 sudo apt update -y
 sudo apt install -y flightgear
 
-sudo add-apt-repository "deb http://archive.ubuntugames.org ubuntugames main"
-sudo apt-get update -y
-sudo apt-get install -y urban-terror
+# TODO
+# sudo add-apt-repository "deb http://archive.ubuntugames.org ubuntugames main"
+# sudo apt-get update -y
+# sudo apt-get install -y urban-terror
 
 sudo apt install -y freeciv
 
@@ -52,8 +54,8 @@ sudo apt install -y fretsonfire
 sudo apt install -y slashem
 
 echo "deb http://download.opensuse.org/repositories/home:/FrodeSolheim:/stable/Debian_9.0/ /" > /etc/apt/sources.list.d/FrodeSolheim-stable.list
-apt-get update
-apt-get install -y fs-uae fs-uae-launcher fs-uae-arcade
+sudo apt-get update -y
+sudo apt-get install -y fs-uae fs-uae-launcher fs-uae-arcade
 
 # TODO:
 # https://mednafen.github.io/releases/files/mednafen-1.21.3.tar.xz
@@ -66,9 +68,10 @@ wget https://github.com/Stellarium/stellarium/releases/download/v0.18.2/Stellari
 
 wget https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.2.1/OpenRCT2-0.2.1-linux-x86_64.tar.gz
 
-sudo add-apt-repository -y ppa:ubuntuhandbook1/stepmania
-sudo apt update -y
-sudo apt install -y stepmania
+# TODO
+# sudo add-apt-repository -y ppa:ubuntuhandbook1/stepmania
+# sudo apt update -y
+# sudo apt install -y stepmania
 
 # TODO: Armagetron Advanced
 
@@ -88,15 +91,15 @@ sudo apt install -y pingus
 
 sudo apt install -y wesnoth
 
-sudo apt install -y openbve
+# TODO
+# sudo apt install -y openbve
 
 sudo apt install -y supertuxkart
 
-sudo apt install -y tuxracer
+# TODO
+# sudo apt install -y tuxracer
 
-sudo add-apt-repository ppa:speed-dreams/ppa
-sudo apt update -y
-sudo apt install -y speed-dreams
+# TODO speed-dreams
 
 sudo add-apt-repository ppa:mzahniser/endless-sky
 sudo apt update -y
@@ -116,7 +119,7 @@ git clone https://github.com/leereilly/games.git
 
 sudo apt install -y openttd
 
-sudo apt-get install -y steam
+sudo apt install -y steam
 
 # TODO: Liam to uncomment to take credit (thank you, my friend!!!)
 # sudo add-apt-repository -y ppa:materieller/teamspeak3

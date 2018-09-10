@@ -3,8 +3,6 @@
 # System 💖: Computing with Heart #
 ###################################
 
-# TODO: Sorry for the total and _complete_ mess. Just want to get the repo checked in to get started..
-
 cd /home/`whoami`/Desktop/
 
 mkdir engineer
@@ -59,20 +57,17 @@ sudo apt install -y r-base r-base-dev
 
 sudo apt install -y git-extras gitk apt-transport-https
 
-echo "deb https://dist.crystal-lang.org/apt crystal main" | sudo tee /etc/apt/sources.list.d/crystal.list
-sudo apt -y update
-sudo apt install -y crystal
+# TODO
+# echo "deb https://dist.crystal-lang.org/apt crystal main" | sudo tee /etc/apt/sources.list.d/crystal.list
+# sudo apt -y update
+# sudo apt install -y crystal
 
+# TODO: put organize these in the proper place
 sudo apt-add-repository -y "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-6.0 main"
 sudo add-apt-repository -y ppa:hvr/ghc
-sudo add-apt-repository -y ppa:jonathonf/gcc-7.1
 sudo add-apt-repository -y ppa:marutter/rrutter
 sudo add-apt-repository -y ppa:ultradvorka/ppa
-sudo add-apt-repository -y ppa:openscad/releases
-sudo add-apt-repository -y ppa:staticfloat/juliareleases
-sudo add-apt-repository -y ppa:plt/racket
-sudo add-apt-repository -y ppa:stefansundin/truecrypt
-sudo add-apt-repository ppa:deadsnakes/ppa
+sudo add-apt-repository -y ppa:deadsnakes/ppa
 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
@@ -85,12 +80,12 @@ sudo apt install -y bcal
 
 sudo apt install -y bucklespring
 
-sudo apt install -y cabal-install \
+sudo apt install -y cabal-install
 
-sudo apt install -y clang \
-sudo apt install -y clang-6.0 \
+sudo apt install -y clang
+sudo apt install -y clang-6.0
 
-sudo apt install -y clisp \
+sudo apt install -y clisp
 
 sudo apt install -y cvs
 
@@ -110,8 +105,7 @@ sudo apt install -y fp-compiler
 
 sudo apt install -y fsharp
 
-sudo apt install -y g++-7
-
+sudo add-apt-repository -y ppa:jonathonf/gcc-7.1
 sudo apt install -y gcc-7
 
 sudo apt install -y gdb
@@ -148,7 +142,9 @@ sudo apt install -y jmeter
 
 sudo apt install -y jq
 
-sudo apt install -y julia
+# TODO
+# sudo add-apt-repository -y ppa:staticfloat/juliareleases
+# sudo apt install -y julia
 
 sudo apt install -y lua5.2
 
@@ -182,6 +178,7 @@ sudo apt install -y open-cobol
 sudo apt install -y openjdk-8-jdk
 sudo apt install -y openjdk-8-jre
 
+sudo add-apt-repository -y ppa:openscad/releases
 sudo apt install -y openscad
 
 sudo apt install -y parallel
@@ -198,10 +195,12 @@ sudo apt install -y pkg-config
 sudo apt install -y putty
 sudo apt install -y putty-tools
 
+sudo add-apt-repository -y ppa:plt/racket
 sudo apt install -y racket
 
 sudo apt install -y rsync
 
+sudo apt install -y ruby
 sudo apt install -y ruby-full
 sudo apt install -y rubygems
 
@@ -241,6 +240,7 @@ sudo apt install -y transmission
 
 sudo apt install -y tree
 
+sudo add-apt-repository -y ppa:stefansundin/truecrypt
 sudo apt install -y truecrypt
 
 sudo apt install -y tzdata
@@ -263,17 +263,19 @@ sudo apt install -y xz-utils
 
 sudo apt install -y zsh
 
-sudo apt install -y mono-devel \
-                     mono-complete \
-                     referenceassemblies-pcl \
-                     ca-certificates-mono \
-                     mono-xsp4 \
-                     monodevelop-nunit \
-                     monodevelop-versioncontrol \
-                     monodevelop-database
-
+# TODO
 # echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 # echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+# sudo apt update -y
+# sudo apt install -y mono-devel \
+#                      mono-complete \
+#                      referenceassemblies-pcl \
+#                      ca-certificates-mono \
+#                      mono-xsp4 \
+#                      monodevelop-nunit \
+#                      monodevelop-versioncontrol \
+#                      monodevelop-database
+
 
 # TODO: organize this in general
 # sudo apt-get install -y libcups2 cups libcups2-dev cups-bsd libdbus-1-dev libjpeg-dev cups-client libcupsimage2-dev libusb-1.0.0-dev libsane-dev libsnmp-dev snmp-mibs-downloader openssl python3-dev libtool libtool-bin gtk2-engines-pixbuf xsane python3-dbus.mainloop.qt

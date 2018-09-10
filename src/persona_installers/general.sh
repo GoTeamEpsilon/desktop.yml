@@ -33,10 +33,8 @@ sudo apt install -y build-essential \
 
 sudo apt install -y  libqt4-dev \
                      libstdc++5 \
-                     libX11-dev \
                      libblocksruntime-dev \
                      libbsd-dev \
-                     libcurl4-openssl-dev \
                      libedit-dev \
                      libffi-dev \
                      libgmp-dev \
@@ -50,8 +48,6 @@ sudo apt install -y  libqt4-dev \
                      libssl-dev \
                      libtinfo-dev \
                      libtool \
-                     libwxgtk2.8-0 \
-                     libwxgtk2.8-dev \
                      libxml2-dev \
                      libxslt1-dev \
                      libyaml-dev \
@@ -63,11 +59,6 @@ sudo apt install -y  libqt4-dev \
                      libboost-dev \
                      libboost-filesystem-dev \
                      libboost-thread-dev \
-                     libcurl-dev \
-                     libcurl4-gnutls-dev \
-                     libcurl4-openssl-dev \
-                     libcurl4-openssl-dev \
-                     libcurl4-openssl-dev \
                      libevent-dev \
                      libexpat1-dev \
                      libffi-dev \
@@ -89,40 +80,22 @@ sudo apt install -y  libqt4-dev \
                      libtool \
                      libtool \
                      libvirt-bin  \
-                     libwxbase3.1-0-unofficial \
-                     libwxbase3.1-0-unofficial-dbg \
-                     libwxbase3.1-dev \
-                     libwxgtk-media3.1-0-unofficial \
-                     libwxgtk-media3.1-0-unofficial-dbg \
-                     libwxgtk-media3.1-dev \
-                     libwxgtk-webview3.1-0-unofficial \
-                     libwxgtk-webview3.1-0-unofficial-dbg \
-                     libwxgtk-webview3.1-dev \
-                     libwxgtk3.1-0-unofficial \
-                     libwxgtk3.1-0-unofficial-dbg \
-                     libwxgtk3.1-dev \
                      libxml2-dev \
                      libxslt1-dev \
                      libyaml-dev \
                      libz-dev \
-                     linux-headers-$(uname -r) \
+                     #linux-headers-$(uname -r) \
                      make \
                      mercurial
 
-# TODO: pair these with the packages "inline"
-sudo apt-add-repository -y https://dl.winehq.org/wine-builds/ubuntu/
-sudo add-apt-repository -y ppa:transmissionbt/ppa
-sudo add-apt-repository -y ppa:nvbn-rm/ppa
-sudo add-apt-repository -y ppa:juanje/freemind
-sudo add-apt-repository -y ppa:scribus/ppa
-sudo add-apt-repository -y ppa:gottcode/gcppa
-sudo add-apt-repository -y ppa:pithos/ppa
-sudo add-apt-repository -y ppa:pidgin-developers/ppa
-sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-makeudo add-apt-repository -y ppa:jaap.karssenberg/zim
-sudo sh -c 'echo "deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_18.04/ /" > /etc/apt/sources.list.d/isv:ownCloud:desktop.list'
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo sh -c 'echo "deb https://dl.bintray.com/resin-io/debian stable etcher" >> /etc/apt/sources.list.d/etcher.list'
-sudo sh -c 'echo "deb https://dl.bintray.com/aluxian/deb beta main" >> /etc/apt/sources.list.d/whatsie.list'
+
+sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt update -y
+sudo apt-get install --install-recommends winehq-stable
+
+wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
+sudo dpkg -i Whatever_1.0.0_amd64.deb
+rm Whatever_1.0.0_amd64.deb
 
 sudo apt install -y aircrack-ng
 
@@ -144,17 +117,11 @@ sudo apt install -y clipit
 
 sudo apt install -y cowsay
 
-sudo apt install -y etcher-electron
-
-sudo apt install -y everpad
-
 sudo apt install -y focuswriter
 
 sudo apt install -y fortune-mod
 
 sudo apt install -y freeglut3-dev
-
-sudo apt install -y freemind
 
 sudo apt install -y freeplane
 
@@ -166,6 +133,8 @@ sudo apt install -y glee-dev
 
 sudo apt install -y gnome-orca
 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt update -y
 sudo apt install -y google-chrome-stable
 
 sudo apt install -y graphicsmagick
@@ -192,6 +161,8 @@ sudo apt install -y owncloud-client
 
 sudo apt install -y pidgin
 
+sudo add-apt-repository -y ppa:pithos/ppa
+sudo apt update -y
 sudo apt install -y pithos
 
 sudo apt install -y pydf
@@ -209,6 +180,8 @@ sudo apt install -y redshift-gtk
 
 sudo apt install -y screen
 
+sudo add-apt-repository -y ppa:scribus/ppa
+sudo apt update -y
 sudo apt install -y scribus-ng
 
 sudo apt install -y snapd
@@ -225,9 +198,7 @@ sudo apt install -y tomboy
 
 sudo apt install -y torbrowser-launcher
 
-sudo apt install -y transmission-cli
-sudo apt install -y transmission-common
-sudo apt install -y transmission-daemon
+sudo apt install -y transmission
 
 sudo apt install -y ubuntu-vm-builder
 
@@ -237,11 +208,10 @@ sudo apt install -y unzip
 
 sudo apt install -y virt-manager
 
-sudo apt install -y xrandr
-
-sudo apt install -y whatsie
-
-sudo apt install -y winehq-devel
+# TODO: test
+# sudo sh -c 'echo "deb https://dl.bintray.com/aluxian/deb beta main" >> /etc/apt/sources.list.d/whatsie.list'
+# sudo apt update -y
+# sudo apt install -y whatsie
 
 sudo apt install -y wx-common
 
@@ -257,7 +227,9 @@ sudo apt install -y zim
 
 sudo apt install -y zlib1g-dev
 
-sudo apt install libreoffice
+sudo apt install -y libreoffice
+
+sudo apt install -y xournal
 
 sudo snap install gnome-twitch --beta
 
