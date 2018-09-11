@@ -71,12 +71,15 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
+sudo apt install -y npm
 
 sudo apt install -y octave
 
 sudo apt install -y spyder
 
 sudo apt install -y bcal
+
+sudo apt install -y gnome-boxes
 
 sudo apt install -y bucklespring
 
@@ -255,7 +258,8 @@ sudo apt install -y vim
 
 sudo apt install -y virtualbox
 
-sudo apt install -y wireshark
+# TODO: this is interactive
+# sudo apt install -y wireshark
 
 sudo apt install -y xcircuit
 
@@ -302,7 +306,7 @@ sudo snap install google-cloud-sdk --classic
 
 sudo snap install heroku --classic
 
-sudo snap install kotlin
+sudo snap install kotlin --classic
 
 sudo snap install kubectl --classic
 
@@ -690,8 +694,6 @@ make_docker_url "docker-on-the-desktop" "https://github.com/jessfraz/dockerfiles
 
 curl -sLf https://spacevim.org/install.sh | bash
 
-curl https://sh.rustup.rs -sSf | sh
-
 mkdir swift-source
 cd swift-source
 git clone https://github.com/apple/swift.git
@@ -701,11 +703,13 @@ utils/build-script --release-debuginfo
 cd ..
 
 
-gem install lolcat
+sudo gem install lolcat
 
-git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+# TODO (this is interactive)
+# git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install
+
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep_0.9.0_amd64.deb
 sudo dpkg -i ripgrep_0.9.0_amd64.deb
 
@@ -731,7 +735,7 @@ git clone https://github.com/kriasoft/react-starter-kit.git
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 sudo apt-get update -y
-sudo apt-get install -y erlang esl-erlang
+sudo apt install -y erlang esl-erlang
 
 cabal update
 cabal install idris
@@ -771,16 +775,21 @@ python setup.py install
 cd ..
 
 
-gem install sass
+sudo gem install sass
 
-curl -sSf https://static.rust-lang.org/rustup.sh | sh
+# TODO: this is interactive
+# curl -sSf https://static.rust-lang.org/rustup.sh | sh
+# curl https://sh.rustup.rs -sSf | sh
+
 
 curl -s get.gvmtool.net | bash
 source ~/.gvm/bin/gvm-init.sh
 gvm install groovy
 gvm install grails
 
-umake scala scala-lang
+# TODO: this is interactive
+# umake scala scala-lang
+
 umake dart dart-sdk
 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
@@ -804,7 +813,7 @@ wget https://download.springsource.com/release/STS/3.9.5.RELEASE/dist/e4.8/sprin
 tar -xvf spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 rm spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 
-sudo apt-get install emacs
+sudo apt install -y emacs
 mv .emacs .emacs.old
 mv .emacs.d .emacs.d.old
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -832,7 +841,7 @@ git clone https://github.com/clibs/clib.git /tmp/clib && cd /tmp/clib
 make
 sudo make install
 
-gem install bundler jekyll
+sudo gem install bundler jekyll
 
 curl https://install.meteor.com/ | sh
 
