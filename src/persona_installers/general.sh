@@ -9,8 +9,9 @@ cd /home/`whoami`/Desktop
 
 sudo locale-gen en_US en_US.UTF-8
 
-sudo apt -y upgrade
-
+# TODO: not secure/hacky
+sudo apt-get --allow-unauthenticated upgrade
+sudo apt update -y
 sudo touch /etc/apt/apt.conf.d/99allow_unauth
 sudo chmod 0777 /etc/apt/apt.conf.d/99allow_unauth
 sudo echo 'APT { Get { AllowUnauthenticated "1"; }; };' > /etc/apt/apt.conf.d/99allow_unauth
@@ -43,7 +44,6 @@ sudo apt install -y  libqt4-dev \
                      libncurses5-dev \
                      libpng-dev \
                      libreadline-dev \
-                     librecad \
                      libsqlite3-dev \
                      libssl-dev \
                      libtinfo-dev \
@@ -88,10 +88,12 @@ sudo apt install -y  libqt4-dev \
                      make \
                      mercurial
 
+# TODO: Remove
+sudo apt --fix-broken install
 
 sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 sudo apt update -y
-sudo apt-get install --install-recommends winehq-stable
+sudo apt-get install --install-recommends -y winehq-stable
 
 wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
 sudo dpkg -i Whatever_1.0.0_amd64.deb
@@ -133,9 +135,12 @@ sudo apt install -y glee-dev
 
 sudo apt install -y gnome-orca
 
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt update -y
-sudo apt install -y google-chrome-stable
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+yes | sudo gdebi google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo apt install y-ppa-manager
 
 sudo apt install -y graphicsmagick
 
@@ -215,12 +220,6 @@ sudo apt install -y virt-manager
 
 sudo apt install -y wx-common
 
-sudo apt install -y wx3.1-examples
-
-sudo apt install -y wx3.1-headers
-
-sudo apt install -y wx3.1-i18n
-
 sudo apt install -y youtube-dl
 
 sudo apt install -y zim
@@ -250,8 +249,6 @@ sudo snap install discord
 sudo snap install easy-disk-cleaner
 
 sudo snap install ffmpeg
-
-sudo snap install firefoxudo
 
 sudo snap install gimp
 
@@ -284,9 +281,10 @@ sudo usermod -a -G fuse $USER
 
 curl https://rclone.org/install.sh | sudo bash
 
-wget http://www.rastersoft.com/descargas/cronopete/cronopete-bionic_4.4.0-ubuntu1_amd64.deb
-sudo dpkg -i cronopete-bionic_4.4.0-ubuntu1_amd64.deb
-rm cronopete-bionic_4.4.0-ubuntu1_amd64.deb
+# TODO
+# wget http://www.rastersoft.com/descargas/cronopete/cronopete-bionic_4.4.0-ubuntu1_amd64.deb
+# sudo dpkg -i cronopete-bionic_4.4.0-ubuntu1_amd64.deb
+# rm cronopete-bionic_4.4.0-ubuntu1_amd64.deb
 
 wget https://github.com/yakyak/yakyak/releases/download/v1.5.1/yakyak-1.5.1-linux-amd64.deb
 sudo dpkg -i yakyak-1.5.1-linux-amd64.deb
@@ -327,3 +325,5 @@ make_desktop_url "Wikipedia" "http://wikipedia.org"
 make_desktop_url "Craigslist" "http://craigslist.org"
 make_desktop_url "Change.org" "https://change.org"
 make_desktop_url "Sci-Hub" "https://sci-hub.tw/"
+
+# TODO: Remove
