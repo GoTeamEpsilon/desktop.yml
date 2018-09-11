@@ -13,15 +13,11 @@ The software is experimental and *EXTREMELY* unstable/alpha at this time. System
 
 TODO: Matthew to work with designer on branding each persona in a layperson format. Information should include what tooling and resources come with each persona. Current personas are:
 
-- General*
-- Gamer
+- General
 - Engineer
+- Gamer
 - Clinician
 - Creative
-
-_*(prereq - must be installed for System or other personas to work - will be abstracted away from the users soon)_
-
-_(ordered in terms of stability)_
 
 # Technical
 
@@ -37,9 +33,12 @@ TODO: Partner with a USB Linux distro company to make this painless.
 
 ```
 cd ~/Desktop
-git clone https://github.com/GoTeamEpsilon/System.git
+# TODO use Github release binary after soon time
+wget https://github.com/GoTeamEpsilon/System/archive/master.zip
+unzip master
+mv System-master System
+rm master
 cd System/src
-./main.sh
 ```
 
 6. Run the "general" persona installer to set up the base system.

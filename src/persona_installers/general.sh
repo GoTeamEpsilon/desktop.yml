@@ -101,6 +101,8 @@ rm Whatever_1.0.0_amd64.deb
 
 sudo apt install -y aircrack-ng
 
+sudo apt install -y arandr
+
 sudo apt install -y binutils
 
 sudo apt install -y bison
@@ -327,3 +329,4 @@ make_desktop_url "Change.org" "https://change.org"
 make_desktop_url "Sci-Hub" "https://sci-hub.tw/"
 
 # TODO: Remove
+sudo apt --fix-broken install
