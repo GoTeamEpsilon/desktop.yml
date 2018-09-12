@@ -4,7 +4,7 @@
 
 ![IMG](./screens.gif)
 
-### System (version 1, [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources.
+#### System (version 1, [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources. Each persona has their own install script under `./src/persona_installers` for inspection, however, detailed information on the contents will be provided below.
 
 ## General Persona
 ...todo...
@@ -41,18 +41,7 @@ cd persona_installers
 
 3. Consider which personas you'd like to install and run the installers like so:
 
-```
-# cd ~/Desktop/System/src
-cd persona_installers
-
-./creative.sh
-
-./clinician.sh
-
-./engineer.sh
-
-./gamer.sh
-```
+`./engineer.sh`, `./gamer.sh`, `./creative.sh`, `./clinician.sh`
 
 
 ## Issues
