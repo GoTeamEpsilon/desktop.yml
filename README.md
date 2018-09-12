@@ -4,7 +4,7 @@
 
 ![IMG](./screens.gif)
 
-System (version 1,[Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources.
+### System (version 1, [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources.
 
 ## General Persona
 ...todo...
@@ -25,18 +25,16 @@ System (version 1,[Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechan
 
 ## Installation
 
-1. Install a modern Ubuntu v18-based operating system that has both `apt` and `snap` package managers.
-2. Install the framework by running the following in your terminal (TODO: put in script):
+1. Install a modern Linux operating system that has both `apt` and `snap` package managers. Ubuntu is recommended.
+2. Install the framework by running the following in your terminal:
 
 ```
 cd ~/Desktop
-# TODO: use Github release binary after soon time
 wget https://github.com/GoTeamEpsilon/System/archive/master.zip
 unzip master
 mv System-master System
 rm master
 cd System/src
-# cd ~/Desktop/System/src
 cd persona_installers
 ./general.sh
 ```
