@@ -139,7 +139,7 @@ sudo apt install -y glee-dev
 sudo apt install -y gnome-orca
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i gdebi google-chrome-stable_current_amd64.deb
+sudo dpkg -i gdebi google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
@@ -306,7 +306,7 @@ sudo dpkg -i mattermost-desktop-4.1.2-linux-amd64.deb
 rm mattermost-desktop-4.1.2-linux-amd64.deb
 
 wget https://linux.dropbox.com/packages/ubuntu/dropbox_2015.10.28_amd64.deb
-sudo dpkg -i dropbox_2015.10.28_amd64.deb
+yes | sudo dpkg -i dropbox_2015.10.28_amd64.deb
 rm dropbox_2015.10.28_amd64.deb
 
 make_desktop_url() {
