@@ -1,56 +1,47 @@
 ![IMG](./src/assets/logo.png)
 
-## _System is a free, elegant, and safe desktop designed for many types of computer users around the world._
+### _System is a free, elegant, and safe desktop framework designed for many types of computer users around the world._
 
 ![IMG](./screens.gif)
 
-TODO: "Sparkle Heart Start" Menu v v v
-![IMG](./src/assets/snap-of-start-heart.png)
+System (version 1,[Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources.
 
-The software is experimental and *EXTREMELY* unstable/alpha at this time. System versions will be released alphabetically with ancient-greek inspired names. The first version will be called ["Antikythera"](https://en.wikipedia.org/wiki/Antikythera_mechanism).
+## General Persona
+...todo...
 
-# User Personas
+## Engineer Persona
+...todo...
 
-TODO: Matthew to work with designer on branding each persona in a layperson format. Information should include what tooling and resources come with each persona. Current personas are:
+## Creative Persona
+...todo...
 
-- General
-- Engineer
-- Gamer
-- Clinician
-- Creative
+## Gamer Persona
+...todo...
+
+## Clinician Persona
+...todo...
 
 # Technical
 
-## Install
+## Installation
 
-TODO: Partner with a USB Linux distro company to make this painless.
-
-1. Download Ubuntu MATE 18.04.1 LTS (Bionic): https://ubuntu-mate.org/download/
-2. Mount it on a USB stick for installation: https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0
-3. Plug flashdrive in and restart computer to bring up the setup wizard
-4. Navigate through the setup wizard
-5. Once the Ubuntu MATE is installed, open up the MATE terminal and run the following:
+1. Install a modern Ubuntu v18-based operating system that has both `apt` and `snap` package managers.
+2. Install the framework by running the following in your terminal (TODO: put in script):
 
 ```
 cd ~/Desktop
-# TODO use Github release binary after soon time
+# TODO: use Github release binary after soon time
 wget https://github.com/GoTeamEpsilon/System/archive/master.zip
 unzip master
 mv System-master System
 rm master
 cd System/src
-```
-
-6. Run the "general" persona installer to set up the base system.
-
-```
 # cd ~/Desktop/System/src
 cd persona_installers
-
 ./general.sh
 ```
 
-7. Consider which personas you'd like to install and run the installers like so:
+3. Consider which personas you'd like to install and run the installers like so:
 
 ```
 # cd ~/Desktop/System/src
@@ -73,9 +64,7 @@ See issue tracker for project statuses and to discuss System 💖.
 
 ## Devs
 
-[Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new).
-
-_We don't have a Patreon yet, but you can donate to Matthew Vi here: https://www.patreon.com/matthewvi until we set up a bank account. Thanks!_
+[Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new). Support us on [Patreon](https://www.patreon.com/matthewvi).
 
 
 ## License
