@@ -696,6 +696,8 @@ make_docker_url "jq-node" "https://hub.docker.com/r/fgribreau/jq.node/"
 
 make_docker_url "docker-on-the-desktop" "https://github.com/jessfraz/dockerfiles"
 
+make_docker_url "postgraphql" "https://hub.docker.com/r/postgraphql/postgraphql/"
+
 curl -sLf https://spacevim.org/install.sh | bash
 
 # TODO: Don't build from source (takes forever)
