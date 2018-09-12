@@ -773,7 +773,6 @@ pip install -r requirements.txt
 python setup.py install
 cd ..
 
-
 sudo gem install sass
 
 # TODO: this is interactive
@@ -803,8 +802,6 @@ tar -xvf spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 rm spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 
 sudo apt install -y emacs
-mv .emacs .emacs.old
-mv .emacs.d .emacs.d.old
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.2/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
