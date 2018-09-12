@@ -735,7 +735,6 @@ git clone https://github.com/kriasoft/react-starter-kit.git
 
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
-sudo apt-get update -y
 sudo apt install -y erlang esl-erlang
 
 cabal update
@@ -744,8 +743,7 @@ cabal install idris
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 rm erlang-solutions_1.0_all.deb
-sudo apt-get update
-sudo apt-get install elixir
+sudo apt install -y elixir
 
 # TODO
 # wget https://github.com/james-proxy/james/releases/download/v2.0.0/james-2.0.0-x86_64.AppImage
