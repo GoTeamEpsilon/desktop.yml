@@ -327,6 +327,7 @@ make_desktop_url "Wikipedia" "http://wikipedia.org"
 make_desktop_url "Craigslist" "http://craigslist.org"
 make_desktop_url "Change.org" "https://change.org"
 make_desktop_url "Sci-Hub" "https://sci-hub.tw/"
+make_desktop_url "Xowa" "https://www.unixmen.com/xowa-offline-wikipedia-reader-editor/"
 
 # TODO: Remove
 sudo apt --fix-broken install
