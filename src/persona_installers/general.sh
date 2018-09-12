@@ -139,7 +139,7 @@ sudo apt install -y glee-dev
 sudo apt install -y gnome-orca
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i gdebi google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
