@@ -766,10 +766,6 @@ sudo gem install bundler jekyll
 curl https://install.meteor.com/ | sh
 
 
-
-
-
-
 mkdir learning
 
 cd learning
@@ -799,35 +795,9 @@ curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # TODO: Put these as little scripts for Qemu. Totally optional, of course:
-
-# # sudo apt-get install qemu-kvm qemu virt-manager virt-viewer libvirt-bin
-# # cd ~
-# # sudo qemu-img create system_test.img 10G
-# # example: sudo qemu-system-x86_64 -hda system_test.img -boot d -cdrom /home/matthew/Downloads/ubuntu-mate-18.04.1-desktop-amd64.iso -m 640
-# # sudo qemu -hda system_test.img -m 640
-# # http://www.knightos.org/
-# # slitaz linux
-# # puppy linux
-# # TempleOS (REST IN PEACE, TERRY - https://www.instagram.com/p/Bnc3RxPBqLU/?taken-by=_matthew_vi)
-# # ReactOS
-# # freebsd or openbsd??
-# # Tinycore
-# # Slitaz
-# # hackentosh in qemu
-# # kano os qemu
-# # https://alpinelinux.org/
+sudo apt install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
+# TODO: qemu ReactOS (RIP, Terry)
+# TODO: qemu TempleOS
+# TODO: qemu Hackentosh
+# TODO: qemu Kano
+# TODO: qemu FreeBSD
