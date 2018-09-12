@@ -233,6 +233,10 @@ sudo apt install -y libreoffice
 
 sudo apt install -y xournal
 
+sudo apt install -y gnome-tweak-tool
+
+sudo apt install -y ubuntu-restricted-extras
+
 sudo snap install gnome-twitch --beta
 
 sudo snap install slack --classic
