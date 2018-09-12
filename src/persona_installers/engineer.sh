@@ -856,14 +856,9 @@ git clone https://github.com/kamranahmedse/design-patterns-for-humans.git
 git clone https://github.com/zeeshanu/learn-regex.git
 git clone https://github.com/gothinkster/realworld.git
 git clone https://github.com/hemanth/functional-programming-jargon.git
+wget https://legacy.gitbook.com/download/pdf/book/mostly-adequate/mostly-adequate-guide
 
-git clone https://github.com/MostlyAdequate/mostly-adequate-guide.git
-cd mostly-adequate-guide/
-npm install
-npm run setup
-npm run generate-pdf
-
-cd ../..
+cd ..
 
 # TODO: This is interactive (asks for password) but it is needed. Putting at bottom to not half execution.
 curl -L http://install.ohmyz.sh | sh
