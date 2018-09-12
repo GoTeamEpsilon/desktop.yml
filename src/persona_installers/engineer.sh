@@ -302,11 +302,15 @@ sudo snap install hollywood --classic
 
 sudo snap install slack-term
 
-sudo snap install docker
-sudo groupadd docker
-sudo usermod -aG docker $USER
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu zesty stable"
+sudo apt update -y
+sudo apt install -y docker-ce
 sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 sudo npm install yo --global
 
