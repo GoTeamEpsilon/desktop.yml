@@ -787,9 +787,6 @@ sudo gem install sass
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 sudo chmod +x /usr/local/bin/composer
 
-curl -L http://install.ohmyz.sh | sh
-chsh -s /bin/zsh
-
 git clone https://github.com/facebook/create-react-app.git
 
 wget http://jregexanalyser.schwebke.com/jregexanalyser/jRegExAnalyser-1_4_0.zip
@@ -871,7 +868,9 @@ npm run generate-pdf
 
 cd ../..
 
-
+# TODO: This is interactive (asks for password) but it is needed. Putting at bottom to not half execution.
+curl -L http://install.ohmyz.sh | sh
+chsh -s /bin/zsh
 
 
 
