@@ -32,6 +32,7 @@ sudo apt install -y build-essential \
                     gcc \
                     ca-certificates
 
+# TODO: move these to the engineer persona script
 sudo apt install -y  libqt4-dev \
                      libstdc++5 \
                      libblocksruntime-dev \
