@@ -328,6 +328,10 @@ sudo snap install hollywood --classic
 
 sudo snap install slack-term
 
+sudo snap install docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 sudo npm install yo --global
 
 sudo npm install @angular/cli --global
