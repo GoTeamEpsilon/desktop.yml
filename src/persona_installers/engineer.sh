@@ -694,13 +694,14 @@ make_docker_url "docker-on-the-desktop" "https://github.com/jessfraz/dockerfiles
 
 curl -sLf https://spacevim.org/install.sh | bash
 
-mkdir swift-source
-cd swift-source
-git clone https://github.com/apple/swift.git
-./swift/utils/update-checkout --clone
-cd swift
-utils/build-script --release-debuginfo
-cd ..
+# TODO: Don't build from source (takes forever)
+# mkdir swift-source
+# cd swift-source
+# git clone https://github.com/apple/swift.git
+# ./swift/utils/update-checkout --clone
+# cd swift
+# utils/build-script --release-debuginfo
+# cd ..
 
 
 sudo gem install lolcat
