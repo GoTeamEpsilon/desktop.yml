@@ -31,11 +31,10 @@
 ```
 cd ~/Desktop
 wget https://github.com/GoTeamEpsilon/System/archive/master.zip
-unzip master
+unzip master.zip
 mv System-master System
-rm master
-cd System/src
-cd persona_installers
+rm master.zip
+cd System/src/persona_installers
 ./general.sh
 ```
 
