@@ -780,16 +780,9 @@ sudo gem install sass
 # curl -sSf https://static.rust-lang.org/rustup.sh | sh
 # curl https://sh.rustup.rs -sSf | sh
 
-
-curl -s get.gvmtool.net | bash
-source ~/.gvm/bin/gvm-init.sh
-gvm install groovy
-gvm install grails
-
 # TODO: this is interactive
 # umake scala scala-lang
-
-umake dart dart-sdk
+# umake dart dart-sdk
 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 sudo chmod +x /usr/local/bin/composer
