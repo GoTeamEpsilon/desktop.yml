@@ -344,7 +344,7 @@ sudo npm install dockly --global
 
 sudo npm install ember-cli --global
 
-sudo npm install express--generator --global
+sudo npm install express-generator --global
 
 sudo npm install gatsby-cli --global
 
