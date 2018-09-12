@@ -301,6 +301,10 @@ wget https://releases.mattermost.com/desktop/4.1.2/mattermost-desktop-4.1.2-linu
 sudo dpkg -i mattermost-desktop-4.1.2-linux-amd64.deb
 rm mattermost-desktop-4.1.2-linux-amd64.deb
 
+wget https://linux.dropbox.com/packages/ubuntu/dropbox_2015.10.28_amd64.deb
+sudo dpkg -i dropbox_2015.10.28_amd64.deb
+rm dropbox_2015.10.28_amd64.deb
+
 make_desktop_url() {
 eval name="$1"
 eval url="$2"
