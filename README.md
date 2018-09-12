@@ -25,7 +25,7 @@
 
 ## Installation
 
-1. Install a modern Linux operating system that has both `apt` and `snap` package managers. Ubuntu is recommended.
+1. Install a modern Linux operating system that has both `apt` and `snap` package managers. [Linux Mint](https://blog.linuxmint.com/?p=3597) and Ubuntu-based distrobutions are recommended.
 2. Install the framework by running the following in your terminal:
 
 ```
