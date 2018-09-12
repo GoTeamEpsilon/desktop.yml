@@ -1,6 +1,6 @@
 ![IMG](./src/assets/logo.png)
 
-### _System is a free, elegant, and safe desktop framework designed for many types of computer users around the world._
+## _System is a free, elegant, and safe desktop framework designed for many types of computer users around the world._
 
 ![IMG](./screens.gif)
 
