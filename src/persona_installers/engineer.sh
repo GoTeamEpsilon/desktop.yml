@@ -57,11 +57,6 @@ sudo apt install -y r-base r-base-dev
 
 sudo apt install -y git-extras gitk apt-transport-https
 
-# TODO
-# echo "deb https://dist.crystal-lang.org/apt crystal main" | sudo tee /etc/apt/sources.list.d/crystal.list
-# sudo apt -y update
-# sudo apt install -y crystal
-
 # TODO: put organize these in the proper place
 sudo apt-add-repository -y "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-6.0 main"
 sudo add-apt-repository -y ppa:hvr/ghc
@@ -144,10 +139,6 @@ sudo apt install -y imagemagick
 sudo apt install -y jmeter
 
 sudo apt install -y jq
-
-# TODO
-# sudo add-apt-repository -y ppa:staticfloat/juliareleases
-# sudo apt install -y julia
 
 sudo apt install -y lua5.2
 
@@ -266,23 +257,6 @@ sudo apt install -y xcircuit
 sudo apt install -y xz-utils
 
 sudo apt install -y zsh
-
-# TODO
-# echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
-# echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
-# sudo apt update -y
-# sudo apt install -y mono-devel \
-#                      mono-complete \
-#                      referenceassemblies-pcl \
-#                      ca-certificates-mono \
-#                      mono-xsp4 \
-#                      monodevelop-nunit \
-#                      monodevelop-versioncontrol \
-#                      monodevelop-database
-
-
-# TODO: organize this in general
-# sudo apt-get install -y libcups2 cups libcups2-dev cups-bsd libdbus-1-dev libjpeg-dev cups-client libcupsimage2-dev libusb-1.0.0-dev libsane-dev libsnmp-dev snmp-mibs-downloader openssl python3-dev libtool libtool-bin gtk2-engines-pixbuf xsane python3-dbus.mainloop.qt
 
 sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
 sudo apt-get -y update
@@ -702,38 +676,10 @@ make_docker_url "postgraphql" "https://hub.docker.com/r/postgraphql/postgraphql/
 
 curl -sLf https://spacevim.org/install.sh | bash
 
-# TODO: Don't build from source (takes forever)
-# mkdir swift-source
-# cd swift-source
-# git clone https://github.com/apple/swift.git
-# ./swift/utils/update-checkout --clone
-# cd swift
-# utils/build-script --release-debuginfo
-# cd ..
-
-
 sudo gem install lolcat
-
-# TODO (this is interactive)
-# git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc
-# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-# ~/.fzf/install
 
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep_0.9.0_amd64.deb
 sudo dpkg -i ripgrep_0.9.0_amd64.deb
-
-# TODO
-# wget https://download1.rstudio.org/rstudio-1.1.456-amd64.deb
-# wget http://ftp.ca.debian.org/debian/pool/main/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5_amd64.deb
-# wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-# sudo dpkg -i libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-# sudo dpkg -i libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-# wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-# sudo dpkg -i libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-# sudo apt-mark hold libgstreamer-plugins-base0.10-0
-# sudo apt-mark hold libgstreamer0.10
-# sudo apt install libjpeg62
-# sudo dpkg -i rstudio-1.1.456-amd64.deb
 
 git config --global diff.tool meld
 git config --global merge.tool meld
@@ -753,9 +699,6 @@ sudo dpkg -i erlang-solutions_1.0_all.deb
 rm erlang-solutions_1.0_all.deb
 sudo apt install -y elixir
 
-# TODO
-# wget https://github.com/james-proxy/james/releases/download/v2.0.0/james-2.0.0-x86_64.AppImage
-
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
@@ -769,8 +712,6 @@ wget https://github.com/angryip/ipscan/releases/download/3.5.3/ipscan_3.5.3_amd6
 sudo dpkg -i ipscan_3.5.3_amd64.deb
 rm ipscan_3.5.3_amd64.deb
 
-# go get github.com/netflix/chaosmonkey/cmd/chaosmonkey
-
 wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
 sudo dpkg -i bat_0.6.1_amd64.deb
 rm bat_0.6.1_amd64.deb
@@ -783,14 +724,6 @@ cd ..
 
 sudo gem install sass
 
-# TODO: this is interactive
-# curl -sSf https://static.rust-lang.org/rustup.sh | sh
-# curl https://sh.rustup.rs -sSf | sh
-
-# TODO: this is interactive
-# umake scala scala-lang
-# umake dart dart-sdk
-
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 sudo chmod +x /usr/local/bin/composer
 
@@ -799,11 +732,6 @@ git clone https://github.com/facebook/create-react-app.git
 wget http://jregexanalyser.schwebke.com/jregexanalyser/jRegExAnalyser-1_4_0.zip
 unzip jRegExAnalyser-1_4_0.zip
 rm jRegExAnalyser-1_4_0.zip
-
-# TODO: this is interactive!!!
-# wget https://raw.github.com/smathot/zotero_installer/master/zotero_installer.sh -O /tmp/zotero_installer.sh
-# chmod +x /tmp/zotero_installer.sh
-# /tmp/zotero_installer.sh
 
 wget https://download.springsource.com/release/STS/3.9.5.RELEASE/dist/e4.8/spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 tar -xvf spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
@@ -826,9 +754,7 @@ wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd6
 unzip terraform_0.11.8_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 
-
 git clone https://github.com/minimaxir/big-list-of-naughty-strings.git
-
 
 sudo apt-get install libcurl4-gnutls-dev -qq
 git clone https://github.com/clibs/clib.git /tmp/clib && cd /tmp/clib
