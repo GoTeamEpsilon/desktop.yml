@@ -1,55 +1,37 @@
 ![IMG](./src/assets/logo.png)
 
-## _System is a free, elegant, and safe desktop framework designed for many types of computer users around the world._
+## _System is a free, elegant, and safe desktop framework that equips various kinds of computer users with exceptional software and curated resources._
 
-System (version 1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources. Each persona has their own install script under `./src/persona_installers` for inspection, however, detailed information on the contents will be provided below.
+Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism)
 
-### General Persona
-...todo...
+## Install
 
-### Engineer Persona
-...todo...
-
-### Creative Persona
-...todo...
-
-### Gamer Persona
-...todo...
-
-### Clinician Persona
-...todo...
-
-# Technical
-
-## Installation
-
-1. Install a modern Linux operating system that has both `apt` and `snap` package managers. [Ubuntu](https://www.ubuntu.com/)-based distributions are recommended.
-2. Install the framework by running the following in your terminal:
-
+1. Install [Ubuntu](https://www.ubuntu.com/) or equivilent operating system.
+2. Execute the following command in the terminal:
 ```
-cd ~/Desktop
-wget https://github.com/GoTeamEpsilon/System/archive/master.zip
-unzip master.zip
-mv System-master System
-rm master.zip
-cd System/src/persona_installers
-./general.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/GoTeamEpsilon/System/master/install.sh)"
 ```
 
-3. Consider which personas you'd like to install and run the installers like so:
+### Personas
 
-`./engineer.sh`, `./gamer.sh`, `./creative.sh`, `./clinician.sh`
+#### General
+...todo...
 
+#### Engineer Persona
+...todo...
 
-## Issues
+#### Creative Persona
+...todo...
 
-See issue tracker for project statuses and to discuss System 💖.
+#### Gamer Persona
+...todo...
 
+#### Clinician Persona
+...todo...
 
 ## Devs
 
 [Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new). Support us on [Patreon](https://www.patreon.com/matthewvi).
-
 
 ## License
 
