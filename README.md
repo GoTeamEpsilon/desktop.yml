@@ -12,18 +12,22 @@ Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Ant
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/GoTeamEpsilon/System/master/install.sh)"
 ```
 
-### Personas
+## Personas
 
 #### General
-...todo...
+
+This persona is installed automatically. It is filled with Windows compatibility software, popular note taking applications, cloud-music players, system utilities, messengers, and Google Chrome.
+
+#### Gamer Persona
+
+Install: `cd ~/Desktop/System/src/persona_installers/ && ./gamer.sh`
+
+The gamer persona comes with popular console emulators, PlayOnLinux, Steam, well-known Linux games, and gamer-specific communication tools.
 
 #### Engineer Persona
 ...todo...
 
 #### Creative Persona
-...todo...
-
-#### Gamer Persona
 ...todo...
 
 #### Clinician Persona
