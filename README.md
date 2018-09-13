@@ -2,9 +2,7 @@
 
 ## _System is a free, elegant, and safe desktop framework designed for many types of computer users around the world._
 
-![IMG](./src/assets/ubuntu-demo-screen.png)
-
-#### System (version 1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources. Each persona has their own install script under `./src/persona_installers` for inspection, however, detailed information on the contents will be provided below.
+System (version 1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))  is a _desktop framework_ that equips various kinds of computer users with exceptional software and curated resources. Each persona has their own install script under `./src/persona_installers` for inspection, however, detailed information on the contents will be provided below.
 
 ### General Persona
 ...todo...
