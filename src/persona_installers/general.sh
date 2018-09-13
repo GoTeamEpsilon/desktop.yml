@@ -237,6 +237,9 @@ sudo apt install -y gnome-tweak-tool
 
 sudo apt install -y ubuntu-restricted-extras
 
+sudo add-apt-repository -y ppa:sporkwitch/autokey
+sudo apt install -y autokey-gtk
+
 sudo snap install gnome-twitch --beta
 
 sudo snap install slack --classic
