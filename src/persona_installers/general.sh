@@ -283,6 +283,8 @@ sudo snap install vlc
 
 sudo snap install whalebird
 
+sudo snap install auryo
+
 sudo modprobe fuse
 sudo usermod -a -G fuse $USER
 
