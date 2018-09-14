@@ -32,66 +32,6 @@ sudo apt install -y build-essential \
                     gcc \
                     ca-certificates
 
-# TODO: move these to the engineer persona script
-sudo apt install -y  libqt4-dev \
-                     libstdc++5 \
-                     libblocksruntime-dev \
-                     libbsd-dev \
-                     libedit-dev \
-                     libffi-dev \
-                     libgmp-dev \
-                     libgtk-3-dev \
-                     libicu-dev \
-                     libncurses5-dev \
-                     libpng-dev \
-                     libreadline-dev \
-                     libsqlite3-dev \
-                     libssl-dev \
-                     libtinfo-dev \
-                     libtool \
-                     libxml2-dev \
-                     libxslt1-dev \
-                     libyaml-dev \
-                     libzmq3-dev \
-                     zlib1g-dev \
-                     lbzip2 \
-                     libavcodec-dev \
-                     libavformat-dev \
-                     libboost-dev \
-                     libboost-filesystem-dev \
-                     libboost-thread-dev \
-                     libevent-dev \
-                     libexpat1-dev \
-                     libffi-dev \
-                     libgl1-mesa-dev \
-                     libglib2.0-dev \
-                     libgraphicsmagick1-dev \
-                     libgtk-3-dev \
-                     libgtk2.0-dev \
-                     libgtop2-dev \
-                     liblua5.1-0-dev \
-                     libpcre3-dev \
-                     libreadline-dev \
-                     libsqlite3-dev \
-                     libsqlite3-dev \
-                     libssl-dev \
-                     libssl-dev \
-                     libswscale-dev \
-                     libtinyxml-dev \
-                     libtool \
-                     libtool \
-                     libvirt-bin  \
-                     libxml2-dev \
-                     libxslt1-dev \
-                     libyaml-dev \
-                     libz-dev \
-                     #linux-headers-$(uname -r) \
-                     make \
-                     mercurial
-
-# TODO: Remove
-sudo apt --fix-broken install
-
 sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 sudo apt update -y
 sudo apt-get install --install-recommends -y winehq-stable
@@ -99,6 +39,10 @@ sudo apt-get install --install-recommends -y winehq-stable
 wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
 sudo dpkg -i Whatever_1.0.0_amd64.deb
 rm Whatever_1.0.0_amd64.deb
+
+sudo apt install -y usb-creator-gtk
+
+sudo apt install -y firefox
 
 sudo apt install -y aircrack-ng
 

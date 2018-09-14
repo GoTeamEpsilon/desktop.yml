@@ -1,4 +1,4 @@
-![IMG](./personas/general/logo.png)
+![IMG](./logo.png)
 
 ### _System is a free, elegant, and safe desktop framework that equips various kinds of computer users with exceptional software and curated resources._
 
