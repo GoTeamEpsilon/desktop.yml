@@ -1,6 +1,6 @@
-![IMG](./src/assets/logo.png)
+![IMG](./personas/general/logo.png)
 
-## _System is a free, elegant, and safe desktop framework that equips various kinds of computer users with exceptional software and curated resources._
+### _System is a free, elegant, and safe desktop framework that equips various kinds of computer users with exceptional software and curated resources._
 
 Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism)
 

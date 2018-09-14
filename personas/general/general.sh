@@ -3,7 +3,7 @@
 # System 💖: Computing with Heart #
 ###################################
 
-mv /home/`whoami`/Desktop/System/src/assets/easter_egg.mkv /home/`whoami`/Desktop/
+mv /home/`whoami`/Desktop/System/personas/general/easter_egg.mkv /home/`whoami`/Desktop/
 
 cd /home/`whoami`/Desktop
 
