@@ -25,13 +25,12 @@ Install: `cd ~/Desktop/System/src/persona_installers/ && ./gamer.sh`
 The gamer persona comes with popular console emulators, PlayOnLinux, Steam, well-known Linux games, and gamer-specific communication tools.
 
 #### Engineer Persona
-...todo...
 
-#### Creative Persona
-...todo...
+Install: `cd ~/Desktop/System/src/persona_installers/ && ./engineer.sh`
 
-#### Clinician Persona
-...todo...
+The engineer persona comes with editors, IDEs, scientific python, database tools, essential docker images links, compiliers, popular front-end framework generators, and much more.
+
+#### Next: Creative, Clinician
 
 ## Devs
 
