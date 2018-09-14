@@ -6,7 +6,7 @@ Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Ant
 
 ## Install
 
-1. Install [Ubuntu](https://www.ubuntu.com/) (or equivalent operating system with `snap` and `apt`).
+1. Install [Ubuntu](https://www.ubuntu.com/download/desktop) (or equivalent operating system with `snap` and `apt`).
 2. Execute the following command in the terminal:
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/GoTeamEpsilon/System/master/install.sh)"
