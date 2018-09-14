@@ -20,13 +20,13 @@ This persona is installed automatically. It is filled with Windows compatibility
 
 #### Gamer Persona
 
-Install: `cd ~/Desktop/System/src/persona_installers/ && ./gamer.sh`
+Install: `cd ~/Desktop/System/personas/gamer && ./gamer.sh`
 
 The gamer persona comes with popular console emulators, PlayOnLinux, Steam, well-known Linux games, and gamer-specific communication tools.
 
 #### Engineer Persona
 
-Install: `cd ~/Desktop/System/src/persona_installers/ && ./engineer.sh`
+Install: `cd ~/Desktop/System/personas/engineer && ./engineer.sh`
 
 The engineer persona comes with editors, IDEs, scientific python, database tools, essential docker images links, compiliers, popular front-end framework generators, and much more.
 
