@@ -37,7 +37,12 @@ _Install:_ `cd ~/Desktop/System/personas/creative && ./creative.sh`
 This persona is packed with music production software, video editors, and graphics/art tools.
 
 
-#### Next: Clinician
+#### Clinician Persona
+
+_Install:_ `cd ~/Desktop/System/personas/clinician && ./clinician.sh`
+
+The clinician persona offers an advanced medical imaging viewer, native views of common clinicial references, and an install link to the popular OpenEMR Cloud Standard EHR.
+
 
 ## Devs
 
