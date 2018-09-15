@@ -3,10 +3,6 @@
 
 cd /home/`whoami`/Desktop/
 
-mkdir engineer
-
-cd engineer
-
 sudo apt -y update
 
 sudo apt install -y  libqt4-dev \
