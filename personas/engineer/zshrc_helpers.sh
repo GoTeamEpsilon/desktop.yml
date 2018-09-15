@@ -44,4 +44,5 @@ delOrig() {
 }
 
 # Open file explorer from terminal (e.x.: `open .`)
+# TODO: switch to `nautilus -s .``
 alias open='gnome-open'
