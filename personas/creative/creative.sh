@@ -3,10 +3,6 @@
 
 cd /home/`whoami`/Desktop/
 
-mkdir creative
-
-cd creative
-
 sudo add-apt-repository -y ppa:dobey/audiotools
 yes | sudo apt install -y ardour
 
