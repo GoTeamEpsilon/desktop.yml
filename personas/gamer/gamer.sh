@@ -3,10 +3,6 @@
 
 cd /home/`whoami`/Desktop/
 
-mkdir gamer
-
-cd gamer
-
 sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.list.d/playonlinux.list
 sudo apt update -y
 sudo apt install -y playonlinux
