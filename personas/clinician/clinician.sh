@@ -3,10 +3,6 @@
 
 cd /home/`whoami`/Desktop/
 
-mkdir clinician
-
-cd clinician
-
 ############
 ### TODO ###
 ############
