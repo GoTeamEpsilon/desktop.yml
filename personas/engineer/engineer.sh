@@ -864,7 +864,7 @@ curl https://install.meteor.com/ | sh
 # TODO: This is interactive (asks for password) but it is needed. Putting at bottom to not half execution.
 curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
-ZSHRC_HELPERS=./zshrc_helpers.sh
+ZSHRC_HELPERS=/home/`whoami`/Desktop/System/personas/engineer/zshrc_helpers.sh
 ZSHRC=~/.zshrc
 
 cat "$ZSHRC_HELPERS" >> "$ZSHRC"
