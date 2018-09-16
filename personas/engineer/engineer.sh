@@ -55,10 +55,11 @@ sudo apt install -y  libqt4-dev \
                      libyaml-dev \
                      libz-dev \
                      #linux-headers-$(uname -r) \
+                     libgnome2-bin \
                      mercurial
 
 # TODO: Remove
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 
 sudo apt install -y python-pip \
                     python-dev \
