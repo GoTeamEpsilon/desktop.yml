@@ -28,14 +28,6 @@ sudo apt install -y build-essential \
                     gcc \
                     ca-certificates
 
-sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
-sudo apt update -y
-sudo apt-get install --install-recommends -y winehq-stable
-
-wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
-sudo dpkg -i Whatever_1.0.0_amd64.deb
-rm Whatever_1.0.0_amd64.deb
-
 sudo apt install -y usb-creator-gtk
 
 sudo apt install -y firefox
@@ -76,13 +68,6 @@ sudo apt install -y glee-dev
 
 sudo apt install -y gnome-orca
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
-
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt install -y y-ppa-manager
-
 sudo apt install -y graphicsmagick
 
 sudo apt install -y htop
@@ -107,10 +92,6 @@ sudo apt install -y owncloud-client
 
 sudo apt install -y pidgin
 
-sudo add-apt-repository -y ppa:pithos/ppa
-sudo apt update -y
-sudo apt install -y pithos
-
 sudo apt install -y pydf
 
 sudo apt install -y python-pip
@@ -125,10 +106,6 @@ sudo apt install -y redshift
 sudo apt install -y redshift-gtk
 
 sudo apt install -y screen
-
-sudo add-apt-repository -y ppa:scribus/ppa
-sudo apt update -y
-sudo apt install -y scribus-ng
 
 sudo apt install -y snapd
 
@@ -175,8 +152,34 @@ sudo apt install -y gnome-tweak-tool
 
 sudo apt install -y ubuntu-restricted-extras
 
+sudo apt install -y nautilus-dropbox
+
+sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt update -y
+sudo apt-get install --install-recommends -y winehq-stable
+
+sudo apt install -y gconf2 gconf-service libappindicator1 gconf-service-backend libgconf-2-4 gconf2-common libindicator7
+wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
+sudo dpkg -i Whatever_1.0.0_amd64.deb
+rm Whatever_1.0.0_amd64.deb
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
+sudo add-apt-repository -y ppa:scribus/ppa
+sudo apt update -y
+sudo apt install -y scribus-ng
+
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo apt install -y y-ppa-manager
+
+sudo add-apt-repository -y ppa:pithos/ppa
+sudo apt update -y
+sudo apt install -y pithos
+
 sudo add-apt-repository -y ppa:sporkwitch/autokey
-sudo apt install -y autokey-gtk
+sudo apt install -y autokey-common autokey-gtk
 
 sudo snap install simplescreenrecorder
 
@@ -246,9 +249,5 @@ wget https://releases.mattermost.com/desktop/4.1.2/mattermost-desktop-4.1.2-linu
 sudo dpkg -i mattermost-desktop-4.1.2-linux-amd64.deb
 rm mattermost-desktop-4.1.2-linux-amd64.deb
 
-wget https://linux.dropbox.com/packages/ubuntu/dropbox_2015.10.28_amd64.deb
-yes | sudo dpkg -i dropbox_2015.10.28_amd64.deb
-rm dropbox_2015.10.28_amd64.deb
-
-# TODO: Remove
+# TODO: Remove when confident that Whatever and Autokey don't encounter dependency issues
 sudo apt --fix-broken install
