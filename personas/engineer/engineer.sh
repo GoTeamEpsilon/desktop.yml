@@ -775,9 +775,6 @@ curl -sLf https://spacevim.org/install.sh | bash
 
 sudo gem install lolcat
 
-curl -LO https://github.com/BurntSushi/ripgrep/releases/download/0.9.0/ripgrep_0.9.0_amd64.deb
-sudo dpkg -i ripgrep_0.9.0_amd64.deb
-
 git config --global diff.tool meld
 git config --global merge.tool meld
 git config --global --add difftool.prompt false
