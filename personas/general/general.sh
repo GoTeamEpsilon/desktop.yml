@@ -152,9 +152,7 @@ sudo apt install -y gnome-tweak-tool
 
 sudo apt install -y nautilus-dropbox
 
-sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
-sudo apt update -y
-sudo apt-get install --install-recommends -y winehq-stable
+sudo apt install wine64
 
 sudo apt install -y gconf2 gconf-service libappindicator1 gconf-service-backend libgconf-2-4 gconf2-common libindicator7
 wget https://github.com/CellarD0-0r/whatever/releases/download/v1.0.0/Whatever_1.0.0_amd64.deb
