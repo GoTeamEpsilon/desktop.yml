@@ -781,10 +781,6 @@ git config --global --add difftool.prompt false
 
 git clone https://github.com/kriasoft/react-starter-kit.git
 
-wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
-sudo dpkg -i erlang-solutions_1.0_all.deb
-sudo apt install -y erlang esl-erlang
-
 cabal update
 cabal install idris
 
