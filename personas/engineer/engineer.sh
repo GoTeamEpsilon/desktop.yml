@@ -314,6 +314,8 @@ sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
 sudo apt-get -y update
 sudo apt install -y freecad
 
+sudo apt install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
+
 sudo snap install altair
 
 sudo snap install android-studio --classic
@@ -830,19 +832,23 @@ rm spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 sudo apt install -y emacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.2/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.2/minikube-linux-amd64
+chmod +x minikube
+sudo mv minikube /usr/local/bin/
 
 git clone https://github.com/chentsulin/electron-react-boilerplate.git
 
 wget "https://github.com/elm/compiler/releases/download/0.19.0/binaries-for-linux.tar.gz"
 tar xzf binaries-for-linux.tar.gz
 mv elm /usr/local/bin/
+rm binaries-for-linux.tar.gz
 
 git clone https://github.com/electron/electron-quick-start
 
 wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
 unzip terraform_0.11.8_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
+rm terraform_0.11.8_linux_amd64.zip
 
 git clone https://github.com/minimaxir/big-list-of-naughty-strings.git
 
@@ -853,8 +859,6 @@ sudo make install
 
 sudo gem install bundler jekyll
 
-curl https://install.meteor.com/ | sh
-
 # TODO: This is interactive (asks for password) but it is needed. Putting at bottom to not half execution.
 curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
@@ -862,5 +866,3 @@ ZSHRC_HELPERS=/home/`whoami`/Desktop/System/personas/engineer/zshrc_helpers.sh
 ZSHRC=~/.zshrc
 
 cat "$ZSHRC_HELPERS" >> "$ZSHRC"
-
-sudo apt install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
