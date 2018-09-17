@@ -5,9 +5,10 @@ cd /home/`whoami`/Desktop
 
 sudo locale-gen en_US en_US.UTF-8
 
-# TODO: not secure/hacky
-sudo apt-get --allow-unauthenticated upgrade -y
+sudo apt upgrade -y
 sudo apt update -y
+
+# TODO: not secure/hacky
 sudo touch /etc/apt/apt.conf.d/99allow_unauth
 sudo chmod 0777 /etc/apt/apt.conf.d/99allow_unauth
 sudo echo 'APT { Get { AllowUnauthenticated "1"; }; };' > /etc/apt/apt.conf.d/99allow_unauth
