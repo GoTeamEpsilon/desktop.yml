@@ -150,8 +150,6 @@ sudo apt install -y xournal
 
 sudo apt install -y gnome-tweak-tool
 
-sudo apt install -y ubuntu-restricted-extras
-
 sudo apt install -y nautilus-dropbox
 
 sudo apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
