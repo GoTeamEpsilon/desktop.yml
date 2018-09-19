@@ -29,6 +29,11 @@ sudo apt install -y build-essential \
                     gcc \
                     ca-certificates
 
+# Abstracting this to general because npm is not strictly for the engineer persona (used in clinician). 
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo apt install -y npm
+
 sudo apt install -y usb-creator-gtk
 
 sudo apt install -y firefox
