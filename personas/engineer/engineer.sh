@@ -116,10 +116,6 @@ sudo add-apt-repository -y ppa:marutter/rrutter
 sudo add-apt-repository -y ppa:ultradvorka/ppa
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt install -y nodejs
-sudo apt install -y npm
-
 sudo apt install -y octave
 
 sudo apt install -y spyder
