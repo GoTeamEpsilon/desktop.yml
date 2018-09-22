@@ -99,6 +99,8 @@ sudo pip install thefuck
 sudo pip install troposphere
 sudo pip install jupyter
 
+sudo apt install -y net-tools
+
 sudo apt install -y aircrack-ng
 
 sudo add-apt-repository -y ppa:serge-rider/dbeaver-ce
