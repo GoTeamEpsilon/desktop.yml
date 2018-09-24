@@ -14,6 +14,8 @@ sh -c "$(wget https://raw.githubusercontent.com/GoTeamEpsilon/System/master/inst
 
 ## Personas
 
+**To see all packages and resources for each persona, visit the [docs](https://github.com/GoTeamEpsilon/System/blob/master/personas/docs.md).**
+
 #### General
 
 This persona is installed automatically. It comes with Windows compatibility software, popular note taking applications, cloud-music players, day-to-day utilities, messengers, and Google Chrome.
