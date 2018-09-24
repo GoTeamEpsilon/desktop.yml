@@ -417,7 +417,7 @@ sudo snap install ghex-udt
 # [package] Go: An open source programming language that makes it easy to build simple, reliable, and efficient software.
 sudo snap install go --classic
 
-# [package] Google Cloud SDK is a set of tools for Cloud Platform.
+# [package] Google Cloud SDK: A set of tools for Cloud Platform.
 sudo snap install google-cloud-sdk --classic
 
 # [package] The Heroku Command Line Interface (CLI): Tool that makes it easy to create and manage your Heroku apps directly from the terminal.
@@ -722,7 +722,7 @@ make_docker_url "couchdb" "https://hub.docker.com/_/couchdb/"
 # [resource] Jetty: Provides a Web server and javax.servlet container.
 make_docker_url "jetty" "https://hub.docker.com/_/jetty/"
 
-# [resource] Couchbase Server is a NoSQL document database with a distributed architecture.
+# [resource] Couchbase Server: A NoSQL document database with a distributed architecture.
 make_docker_url "couchbase" "https://hub.docker.com/_/couchbase/"
 
 # [resource] ArangoDB: A distributed database with a flexible data model for documents, graphs, and key-values.
@@ -824,7 +824,7 @@ make_docker_url "bitnami-docker-cluster-autoscaler" "https://hub.docker.com/r/bi
 # [resource] MediaWiki: A free and open-source wiki software.
 make_docker_url "mediawiki" "https://hub.docker.com/_/mediawiki/"
 
-# [resource] Spring Boot is a lightweight framework that takes most of the work out of configuring Spring-based applications.
+# [resource] Spring Boot: A lightweight framework that takes most of the work out of configuring Spring-based applications.
 make_docker_url "spring-boot" "https://hub.docker.com/r/saturnism/spring-boot/"
 
 # [resource] Phoenix: A framework for building scalable web applications with realtime connectivity across all your devices.
@@ -864,7 +864,7 @@ make_docker_url "aspnet" "https://hub.docker.com/r/microsoft/aspnet/"
 # [resource] Internet Information Services: An extensible web server created by Microsoft for use with the Windows NT family.
 make_docker_url "iis" "https://hub.docker.com/r/microsoft/iis/"
 
-# [resource] A developer platform for building all your apps.
+# [resource] .NET: A developer platform for building all your apps.
 make_docker_url "dotnet-framework" "https://hub.docker.com/r/microsoft/dotnet-framework/"
 make_docker_url "dotnet" "https://hub.docker.com/r/microsoft/dotnet/"
 
