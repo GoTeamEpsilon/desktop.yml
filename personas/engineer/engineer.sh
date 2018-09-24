@@ -55,8 +55,7 @@ sudo apt install -y  libqt4-dev \
                      libyaml-dev \
                      libz-dev \
                      #linux-headers-$(uname -r) \
-                     libgnome2-bin \
-                     mercurial
+                     libgnome2-bin
 
 # TODO: Remove
 sudo apt --fix-broken install -y
@@ -209,194 +208,255 @@ sudo apt install -y ghc-8.0.2
 # [package] GNU Privacy Guard: A free-software replacement for Symantec's PGP cryptographic software suite.
 sudo apt install -y gnupg
 
+# [package] GNUstep: A free software implementation of the Cocoa Objective-C.
 sudo apt install -y gnustep-devel
 
+# [package] GNU Objective-C compiler: Compiles Objective-C on platforms supported by the gcc compiler.
 sudo apt install -y gobjc
 
+# [package] Googler: A power tool to Google (Web & News) and Google Site Search from the command-line.
 sudo apt install -y googler
 
+# [package] GParted: A GTK+ front-end to GNU Parted and an official GNOME partition-editing application.
 sudo apt install -y gparted
 
+# [package] Graphviz: A package of open-source tools initiated by AT&T Labs Research for drawing graphs specified in DOT language scripts.
 sudo apt install -y graphviz
 
+# [package] Apache Groovy: A Java-syntax-compatible object-oriented programming language for the Java platform. 
 sudo apt install -y groovy
 
+# [package] Gummi: The simple LaTeX editor.
 sudo apt install -y gummi
 
+# [package] hstr: Bash and zsh shell history suggest box - easily view, navigate, search and manage your command history.
 sudo apt install -y hstr
 
+# [package] Hugo: The world’s fastest framework for building websites.
 sudo apt install -y hugo
 
+# [package] icu-devtools: Development utilities for International Components for Unicode.
 sudo apt install -y icu-devtools
 
+# [package] ImageMagick: Tool to create, edit, compose, convert bitmap images.
 sudo apt install -y imagemagick
 
+# [package] Apache JMeter: Load testing tool for analyzing and measuring the performance of a variety of services.
 sudo apt install -y jmeter
 
+# [package] jq: Sed for JSON data.
 sudo apt install -y jq
 
+# [package] Lua: A lightweight, multi-paradigm programming language designed primarily for embedded use in applications.
 sudo apt install -y lua5.2
 
+# [package] Lynx: A customizable text-based web browser for use on cursor-addressable character cell terminals.
 sudo apt install -y lynx
 
+# [package] Apache Maven: A build automation tool used primarily for Java projects.
 sudo apt install -y maven
 
+# [package] Meld: A visual diff and merge tool targeted at developers.
 sudo apt install -y meld
 
+# [package] Mercurial: A free, distributed source control management tool.
 sudo apt install -y mercurial
 
+# [package] mitmproxy: Tool for debugging, testing, privacy measurements, and penetration testing.
 sudo apt install -y mitmproxy
 
+# [package] Mono: A platform for running and developing applications based on the ECMA/ISO Standards.
 sudo apt install -y mono-devel
 
+# [package] MySQL Workbench: A unified visual tool for database architects, developers, and DBAs.
 sudo apt install -y mysql-workbench
 
+# [package] Nano's ANOther editor: An enhanced free Pico clone.
 sudo apt install -y nano
 
+# [package] Neovim: An extension of Vim.
 sudo apt install -y neovim
 sudo apt install -y neovim-qt
 
+# [package] Nim: A systems and applications programming language.
 sudo apt install -y nim
 
+# [package] Ninja: A small build system with a focus on speed.
 sudo apt install -y ninja-build
 
+# [package] OCaml: A general purpose programming language with an emphasis on expressiveness and safety. 
 sudo apt install -y ocaml
 
+# [package] Common Business-Oriented Language (COBOL): A high-level programming language for business applications.
 sudo apt install -y open-cobol
 
+# [package] OpenJDK: A free and open source implementation of the Java Platform, Standard Edition.
 sudo apt install -y openjdk-8-jdk
 sudo apt install -y openjdk-8-jre
 
+# [package] OpenSCAD: Software for creating solid 3D CAD objects.
 sudo add-apt-repository -y ppa:openscad/releases
 sudo apt install -y openscad
 
+# [package] GNU parallel: A shell tool for executing jobs in parallel using one or more computers.
 sudo apt install -y parallel
 
+# [package] Perl: A family of two high-level, general-purpose, interpreted, dynamic programming languages, Perl 5 and Perl 6.
 sudo apt install -y perl
 sudo apt install -y perl6
 
+# [package] pgAdmin: The most popular and feature rich Open Source administration and development platform for PostgreSQL.
 sudo apt install -y pgadmin3
 
+# [package] Hypertext Preprocessor (PHP): A server-side scripting language designed for Web development, but also used as a general-purpose programming language.
 sudo apt install -y php
 
+# [package] pkg-config: A helper tool used when compiling applications and libraries.
 sudo apt install -y pkg-config
 
+# [package] PuTTY: An SSH and telnet client.
 sudo apt install -y putty
 sudo apt install -y putty-tools
 
+# [package] Racket: A general-purpose, multi-paradigm programming language in the Lisp-Scheme family.
 sudo add-apt-repository -y ppa:plt/racket
 sudo apt install -y racket
 
+# [package] rsync: A utility for efficiently transferring and synchronizing files across computer systems.
 sudo apt install -y rsync
 
+# [package] Ruby: A dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
 sudo apt install -y ruby
 sudo apt install -y ruby-full
 sudo apt install -y rubygems
 
+# [package] Steel Bank Common Lisp: A free Common Lisp implementation.
 sudo apt install -y sbcl
 
+# [package] Scala: A general-purpose programming language providing support for functional programming and a strong static type system.
 sudo apt install -y scala
 
+# [package] Screen: A full-screen window manager that multiplexes a physical terminal between several processes.
 sudo apt install -y screen
 
+# [package] The Silver Searcher: A code searching tool similar to ack, with a focus on speed.
 sudo apt install -y silversearcher-ag
 
+# [package] SQLite: A self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine.
 sudo apt install -y sqlite3
 
+# [package] Secure Socket Shell (SSH): A network protocol that provides administrators with a secure way to access a remote computer.
 sudo apt install -y ssh
 
+# [package] Apache Subversion: A software versioning and revision control system distributed as open source under the Apache License.
 sudo apt install -y subversion
 
+# [package] SWIG: A software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
 sudo apt install -y swig
 
-sudo apt install -y systemtap-sdt-dev
-
+# [package] Taskwarrior: A free and open source software that manages your TODO list from the command line.
 sudo apt install -y taskwarrior
 
+# [package] Tcl: A high-level, general-purpose, interpreted, dynamic programming language.
 sudo apt install -y tcl
-
 sudo apt install -y tcl-dev
 
+# [package] Terminator: An open-source terminal emulator programmed in Java.
 sudo apt install -y terminator
 
-sudo apt install -y texlive-latex-extra
-
-sudo apt install -y tk-dev
-
+# [package] tmux: A terminal multiplexer, allowing a user to access multiple separate terminal sessions inside a single terminal window or remote terminal session.
 sudo apt install -y tmux
 
+# [package] Transmission: A BitTorrent client which features a variety of user interfaces on top of a cross-platform back-end.
 sudo apt install -y transmission
 
+# [package] Tree: A recursive directory listing program that produces a depth-indented listing of files.
 sudo apt install -y tree
 
-sudo add-apt-repository -y ppa:stefansundin/truecrypt
-sudo apt install -y truecrypt
-
-sudo apt install -y tzdata
-
-sudo apt install -y uuid-dev
-
+# [package] Vagrant: An open-source software product for building and maintaining portable virtual software development environments.
 sudo apt install -y vagrant
 
+# [package] Vala: An object-oriented programming language with a self-hosting compiler that generates C code and uses the GObject system.
 sudo apt install -y valac
 
+# [package] Vim: A clone, with additions, of Bill Joy's vi text editor program for Unix. 
 sudo apt install -y vim
 
 # TODO: this is interactive
 # sudo apt install -y wireshark
 
+# [package] XCircuit: A Unix/X11 and Windows program for drawing publication-quality electrical circuit schematic diagrams and related figures.
 sudo apt install -y xcircuit
 
+# [package] XZ Utils: A free general-purpose data compression software with a high compression ratio.
 sudo apt install -y xz-utils
 
+# [package] The Z shell (Zsh): A Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting.
 sudo apt install -y zsh
 
+# [package] FreeCAD: A free and open-source general-purpose parametric 3D CAD modeler and a building information modeling software with finite-element-method support.
 sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
 sudo apt-get -y update
 sudo apt install -y freecad
 
+# [package] QEMU: A free and open-source emulator that performs hardware virtualization.
 sudo apt install -y qemu-kvm qemu virt-manager virt-viewer libvirt-bin
 
+# [package] Altair: A beautiful feature-rich GraphQL Client for all platforms.
 sudo snap install altair
 
-sudo snap install android-studio --classic
-
+# [package] Atom: A free and open source text editor that is modern, approachable, and hackable to the core.
 sudo snap install atom --classic
 
-sudo snap install aws-cli --classic
-
+# [package] doctl: A command line tool for DigitalOcean services.
 sudo snap install doctl
 
+# [package] GHex: a hex editor for GNOME.
 sudo snap install ghex-udt
 
+# [package] Go: An open source programming language that makes it easy to build simple, reliable, and efficient software.
 sudo snap install go --classic
 
+# [package] Google Cloud SDK is a set of tools for Cloud Platform.
 sudo snap install google-cloud-sdk --classic
 
+# [package] The Heroku Command Line Interface (CLI): Tool that makes it easy to create and manage your Heroku apps directly from the terminal.
 sudo snap install heroku --classic
 
+# [package] Kotlin: A statically typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure.
 sudo snap install kotlin --classic
 
+# [package] kubectl: A command line interface for running commands against Kubernetes clusters.
 sudo snap install kubectl --classic
 
+# [package] Lepton: A code snippet manager based on GitHub Gist.
 sudo snap install lepton
 
+# [package] LXD: A next generation system container manager.
 sudo snap install lxd
 
+# [package] Notepadqq: A simple, general-purpose editor for Linux.
 sudo snap install notepadqq
 
+# [package] Postman: The only complete API development environment, for API developers.
 sudo snap install postman
 
+# [package] PowerShell: A task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 sudo snap install powershell --classic
 
+# [package] Remmina: A remote desktop client written in GTK+, aiming to be useful for system administrators and travellers, who need to work with lots of remote computers.
 sudo snap install remmina
 
+# [package] Visual Studio Code: A source code editor developed by Microsoft for Windows, Linux and macOS.
 sudo snap install vscode --classic
 
+# [package] Hollywood: Utility that splits your console into a multiple panes of genuine technobabble, perfectly suitable for any Hollywood geek melodrama.
 sudo snap install hollywood --classic
 
+# [package] slack-term: A Slack client for your terminal.
 sudo snap install slack-term
 
+# [package] Docker: A computer program that performs operating-system-level virtualization, also known as "containerization".
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu zesty stable"
@@ -407,115 +467,128 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
+# [package] Yeoman: Tool that helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.
 sudo npm install yo --global
 
+# [package] Angular CLI: Tool that makes it easy to create an application that already works, right out of the box.
 sudo npm install @angular/cli --global
 
+# [package] Babel: Tool that comes with a built-in CLI which can be used to compile files from the command line.
 sudo npm install babel-cli --global
 
+# [package] Vue CLI: Standard Tooling for Vue.js Development.
 sudo npm install @vue/cli --global
 
+# [package] Aurelia CLI: The official command line tooling for Aurelia.
 sudo npm install aurelia-cli --global
 
+# [package] Bower: A package manager for the web.
 sudo npm install bower --global
 
-sudo npm install branch-diff --global
-
+# [package] Browserify: An open-source JavaScript tool that allows developers to write Node.js-style modules that compile for use in the browser.
 sudo npm install browserify --global
 
+# [package] Choo: A tool for generating choo apps.
 sudo npm install choo-cli --global
 
+# [package] CoffeeScript: A programming language that transcompiles to JavaScript.
 sudo npm install coffee-script --global
 
+# [package] Create React Native App: Create a React Native app on any OS with no build config.
 sudo npm install create-react-native-app --global
 
-sudo npm install crypto-js --global
-
+# [package] David: Node.js module that tells you when your package npm dependencies are out of date.
 sudo npm install david --global
 
-sudo npm install debug --global
-
+# [package] Dockly: Immersive terminal interface for managing docker containers and services.
 sudo npm install dockly --global
 
+# [package] ember-cli: The command line interface for ambitious web applications.
 sudo npm install ember-cli --global
 
+# [package] Express application generator: Quickly create an Express application skeleton.
 sudo npm install express-generator --global
 
+# [package] Gatsby: Command-line interface for creating new sites and running Gatsby commands.
 sudo npm install gatsby-cli --global
 
+# [package] BBB Generator: The Backbone-Boilerplate generator.
 sudo npm install generator-bbb@latest --global
 
-sudo npm install generator-cordovacli --global
-
-sudo npm install generator-dapp --global
-
-sudo npm install generator-dude --global
-
+# [package] generator-jhipster: The Java Hipster boilerplate generator.
 sudo npm install generator-jhipster --global
 
+# [package] generator-jquery-mobile: The jQuery Mobile generator.
 sudo npm install generator-jquery-mobile --global
 
+# [package] generator-ko: The Knockout generator.
 sudo npm install generator-ko --global
 
-sudo npm install generator-marionette-frontend --global
-
-sudo npm install generator-mobile --global
-
+# [package] Node Generator: Tool that creates a base template to start a new Node.js module.
 sudo npm install generator-node --global
 
-sudo npm install generator-polymer --global
-
-sudo npm install generator-webapp --global
-
+# [package] Grunt: Tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting. 
 sudo npm install grunt-cli --global
 
+# [package] Gulp: An open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development.
 sudo npm install gulp --global
 
+# [package] JSBin: A live pastebin for HTML, CSS & JavaScript and a range of processors, including SCSS, CoffeeScript, Jade and more.
 sudo npm install jsbin --global
 
+# [package] JSON Server: A tool to get a full fake REST API with zero coding in less than 30 seconds.
 sudo npm install json-server --global
 
+# [package] Leaner Style Sheets (Less): is a backwards-compatible language extension for CSS. 
 sudo npm install less --global
 
+# [package] local-web-server: The modular web server for productive full-stack development.
 sudo npm install local-web-server --global
 
+# [package] localtunnel: Tool that exposes your localhost to the world for easy testing and sharing.
 sudo npm install localtunnel --global
 
+# [package] Mancy: JavaScript REPL.
 sudo npm install mancy --global
 
+# [package] mithril-cli: A command-line interface to help you build the scaffolding for your next Mithril project.
 sudo npm install mithril-cli --global
 
+# [package] nodemon: A tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 sudo npm install nodemon --global
 
+# [package] OverTime: Easy time-overlap tables for remote teams.
 sudo npm install overtime-cli --global
 
+# [package] PM2: A production runtime and process manager for Node.js applications with a built-in Load Balancer.
 sudo npm install pm2 --global
 
+# [package] Prettier: An opinionated code formatter.
 sudo npm install prettier --global
 
+# [package] Pulp: A build tool for PureScript.
 sudo npm install pulp --global
 
+# [package] PureScript: A strongly-typed language that compiles to Javascript.
 sudo npm install purescript --global
 
-sudo npm install react-tools --global
-
+# [package] Sails.js: A web framework that makes it easy to build custom, enterprise-grade Node.js apps.
 sudo npm install sails --global
 
+# [package] Slap: A Sublime-like terminal-based text editor that strives to make editing from the terminal easier.
 sudo npm install slap@latest --global
 
-sudo npm install standard --global
-
+# [package] Stylus: A revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS.
 sudo npm install stylus --global
 
+# [package] tldr: A Node.js based command-line client for tldr.
 sudo npm install tldr --global
 
+# [package] TypeScript: A language for application-scale JavaScript.
 sudo npm install typescript --global
 
+# [package] Webpack: An open-source JavaScript module bundler.
 sudo npm install webpack --global
-
-sudo npm install yo generator-dojo --global
-
-sudo npm install yo generator-webapp --global
 
 make_docker_url() {
 eval name="$1"
@@ -535,247 +608,285 @@ Icon=text-html
 
 mkdir containers
 
+# [resource] Apache Spark: is an open-source distributed general-purpose cluster-computing framework.
 make_docker_url "spark" "https://hub.docker.com/r/sequenceiq/spark/"
 
+# [resource] Consul: A highly available and distributed service discovery and key-value store.
 make_docker_url "consul" "https://hub.docker.com/_/consul/"
 
+# [resource] Nginx: A web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
 make_docker_url "nginx" "https://hub.docker.com/_/nginx/"
 
+# [resource] Alpine Linux: A Linux distribution based on musl and BusyBox, primarily designed for "power users who appreciate security, simplicity and resource efficiency".
 make_docker_url "alpine" "https://hub.docker.com/_/alpine/"
 
+# [resource] BusyBox: Software that provides several stripped-down Unix tools in a single executable file.
 make_docker_url "busybox" "https://hub.docker.com/_/busybox/"
 
+# [resource] The Apache HTTP Server: A free and open-source cross-platform web server, released under the terms of Apache License 2.0.
 make_docker_url "httpd" "https://hub.docker.com/_/httpd/"
 
+# [resource] Redis: An open source in-memory data structure store, used as a database, cache and message broker.
 make_docker_url "redis" "https://hub.docker.com/_/redis/"
 
+# [resource] MongoDB: A free and open-source cross-platform document-oriented database program.
 make_docker_url "mongo" "https://hub.docker.com/_/mongo/"
 
+# [resource] PostgreSQL: The world's most advanced open source database.
 make_docker_url "postgres" "https://hub.docker.com/_/postgres/"
 
+# [resource] MySQL: An open-source relational database management system.
 make_docker_url "mysql" "https://hub.docker.com/_/mysql/"
 
+# [resource] Memcached: A general-purpose distributed memory caching system.
 make_docker_url "memcached" "https://hub.docker.com/_/memcached/"
 
+# [resource] MariaDB: A community-developed fork of the MySQL relational database management system intended to remain free under the GNU GPL.
 make_docker_url "mariadb" "https://hub.docker.com/_/mariadb/"
 
+# [resource] HAProxy: Free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers.
 make_docker_url "haproxy" "https://hub.docker.com/_/haproxy/"
 
+# [resource] Traefik: A reverse proxy / load balancer that's easy, dynamic, automatic, fast, full-featured, and open source.
 make_docker_url "traefik" "https://hub.docker.com/_/traefik/"
 
+# [resource] RabbitMQ: Open source multi-protocol messaging broker.
 make_docker_url "rabbitmq" "https://hub.docker.com/_/rabbitmq/"
 
+# [resource] WordPress: A free and open-source content management system based on PHP and MySQL.
 make_docker_url "wordpress" "https://hub.docker.com/_/wordpress/"
 
+# [resource] Elasticsearch: A search engine based on Lucene.
 make_docker_url "elasticsearch" "https://hub.docker.com/_/elasticsearch/"
 
+# [resource] InfluxDB: An open-source time series database developed by InfluxData. 
 make_docker_url "influxdb" "https://hub.docker.com/_/influxdb/"
 
+# [resource] Logstash: An open source data collection engine with real-time pipelining capabilities.
 make_docker_url "logstash" "https://hub.docker.com/_/logstash/"
 
+# [resource] Apache Tomcat: An open-source Java Servlet Container developed by the Apache Software Foundation.
 make_docker_url "tomcat" "https://hub.docker.com/_/tomcat/"
 
+# [resource] Jenkins: An open source automation server written in Java.
 make_docker_url "jenkins" "https://hub.docker.com/_/jenkins/"
 
+# [resource] Telegraf: An agent for collecting, processing, aggregating, and writing metrics.
 make_docker_url "telegraf" "https://hub.docker.com/_/telegraf/"
 
+# [resource] Kibana: An open source data visualization plugin for Elasticsearch. 
 make_docker_url "kibana" "https://hub.docker.com/_/kibana/"
 
+# [resource] Drupal: An open source platform for building amazing digital experiences.
 make_docker_url "drupal" "https://hub.docker.com/_/drupal/"
 
+# [resource] Kong: The world's most popular open source microservice API gateway.
 make_docker_url "kong" "https://hub.docker.com/_/kong/"
 
+# [resource] Apache Cassandra: Database that is the right choice when you need scalability and high availability without compromising performance.
 make_docker_url "cassandra" "https://hub.docker.com/_/cassandra/"
 
+# [resource] Vault: Secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing.
 make_docker_url "vault" "https://hub.docker.com/_/vault/"
 
+# [resource] Neo4j: An ACID-compliant transactional database with native graph storage and processing.
 make_docker_url "neo4j" "https://hub.docker.com/_/neo4j/"
 
+# [resource] Sentry: Open-source error tracking that helps developers monitor and fix crashes in real time.
 make_docker_url "sentry" "https://hub.docker.com/_/sentry/"
 
+# [resource] Solr: An open source enterprise search platform, written in Java, from the Apache Lucene project.
 make_docker_url "solr" "https://hub.docker.com/_/solr/"
 
+# [resource] RethinkDB: The open-source database for the realtime web.
 make_docker_url "rethinkdb" "https://hub.docker.com/_/rethinkdb/"
 
+# [resource] Amazon Linux: Operating system that provides a stable, secure, and high-performance execution environment for applications.
 make_docker_url "amazonlinux" "https://hub.docker.com/_/amazonlinux/"
 
+# [resource] Buildpack: A collection of common build dependencies used for installing various modules, e.g., gems.
 make_docker_url "buildpack-deps" "https://hub.docker.com/_/buildpack-deps/"
 
+# [resource] Apache Flink: A powerful open-source distributed stream and batch processing framework.
 make_docker_url "flink" "https://hub.docker.com/_/flink/"
 
+# [resource] ZooKeeper: A centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 make_docker_url "zookeeper" "https://hub.docker.com/_/zookeeper/"
 
+# [resource] Joomla: An open source content management system.
 make_docker_url "joomla" "https://hub.docker.com/_/joomla/"
 
+# [resource] CouchDB: A database that uses JSON for documents, an HTTP API, & JavaScript/declarative indexing.
 make_docker_url "couchdb" "https://hub.docker.com/_/couchdb/"
 
+# [resource] Jetty: Provides a Web server and javax.servlet container.
 make_docker_url "jetty" "https://hub.docker.com/_/jetty/"
 
+# [resource] Couchbase Server is a NoSQL document database with a distributed architecture.
 make_docker_url "couchbase" "https://hub.docker.com/_/couchbase/"
 
+# [resource] ArangoDB: A distributed database with a flexible data model for documents, graphs, and key-values.
 make_docker_url "arangodb" "https://hub.docker.com/_/arangodb/"
 
+# [resource] OrientDB: A multi-model open source NoSQL DBMS that combines graphs and documents.
 make_docker_url "orientdb" "https://hub.docker.com/_/orientdb/"
 
+# [resource] Zend Server: A complete and certified PHP distribution stack fully maintained and supported by Zend Technologies.
 make_docker_url "php-zendserver" "https://hub.docker.com/_/php-zendserver/"
 
+# [resource] Django: A free and open-source web framework, written in Python, which follows the model-view-template architectural pattern.
 make_docker_url "django" "https://hub.docker.com/r/alang/django"
 
-make_docker_url "graphviz-server" "https://hub.docker.com/r/omerio/graphviz-server/"
-
-make_docker_url "react-native-android/" "https://hub.docker.com/r/peterlazar1993/react-native-android"
-
-make_docker_url "ubuntu-openjdk-8-jdk" "https://hub.docker.com/r/picoded/ubuntu-openjdk-8-jdk"
-
-make_docker_url "java8-jenkins-maven-git-vim" "https://hub.docker.com/r/lw96/java8-jenkins-maven-git-vim"
-
+# [resource] Ansible Tower: A web-based solution that makes Ansible even more easy to use for IT teams of all kinds.
 make_docker_url "ubuntu-ansible-tower" "https://hub.docker.com/r/leowmjw/ubuntu-ansible-tower"
 
+# [resource] ubuntu-nginx-mysql-php-nodejs: Docker container built from Ubuntu:14.04 with MySQL, Redis, Nginx, PHP, and Node.js.
 make_docker_url "ubuntu-nginx-mysql-php-nodejs" "https://hub.docker.com/r/edse/ubuntu-nginx-mysql-php-nodejs"
 
+# [resource] Apache HBase: The Hadoop database, a distributed, scalable, big data store.
 make_docker_url "hbase-standalone" "https://hub.docker.com/r/banno/hbase-standalone/"
-
-make_docker_url "laravel-dusk-ci" "https://hub.docker.com/r/chilio/laravel-dusk-ci/"
-
-make_docker_url "docker-scala" "https://hub.docker.com/r/lukasz/docker-scala/"
-
-make_docker_url "scivm/scientific-python-2.7" "https://hub.docker.com/r/scivm/scientific-python-2.7/"
-
-make_docker_url "phusion-baseimage-latest" "https://hub.docker.com/r/jedisct1/phusion-baseimage-latest/"
-
-make_docker_url "ubuntu-lamp" "https://hub.docker.com/r/nickistre/ubuntu-lamp/"
-
-make_docker_url "swift-ubuntu" "https://hub.docker.com/r/ibmcom/swift-ubuntu/"
-
-make_docker_url "kitura-ubuntu" "https://hub.docker.com/r/ibmcom/kitura-ubuntu/"
-
-make_docker_url "play-framework" "https://hub.docker.com/r/dordoka/play-framework/"
-
-make_docker_url "cuda-caffe" "https://hub.docker.com/r/kaixhin/cuda-caffe/"
-
-make_docker_url "ubuntu-16-nginx-php-phpmyadmin-mysql-5" "https://hub.docker.com/r/1and1internet/ubuntu-16-nginx-php-phpmyadmin-mysql-5/"
-
 make_docker_url "hadoop-ubuntu" "https://hub.docker.com/r/sequenceiq/hadoop-ubuntu/"
 
-make_docker_url "tomcat" "https://hub.docker.com/r/dordoka/tomcat/"
+# [resource] Scientific Python 2.7: Scientific Python 2.7 Ubuntu 12.04- Numpy, Scipy, Matplotlib, IPython, pandas, Sympy, nose and many more.
+make_docker_url "scivm/scientific-python-2.7" "https://hub.docker.com/r/scivm/scientific-python-2.7/"
 
+# [resource] Ubuntu LAMP: Dockerfile and relevant configuration to host a LAMP stack on centos using supervisor.
+make_docker_url "ubuntu-lamp" "https://hub.docker.com/r/nickistre/ubuntu-lamp/"
+
+# [resource] Kitura: An enterprise-grade server-side Swift web framework, backed by IBM.
+make_docker_url "kitura-ubuntu" "https://hub.docker.com/r/ibmcom/kitura-ubuntu/"
+
+# [resource] Play Framework: The High Velocity Web Framework For Java and Scala.
+make_docker_url "play-framework" "https://hub.docker.com/r/dordoka/play-framework/"
+
+# [resource] Cuda-Caffe: Ubuntu Core 14.04 + CUDA + Caffe.
+make_docker_url "cuda-caffe" "https://hub.docker.com/r/kaixhin/cuda-caffe/"
+
+# [resource] jenkins-java8-maven-git: Automated build that provides a continuous integration container from Ubuntu 14.04 LTS, plus Oracle Java 8, Jenkins 1.574, Maven 3.2.2, Git and Nano.
 make_docker_url "jenkins-java8-maven-git" "https://hub.docker.com/r/stephenreed/jenkins-java8-maven-git/"
 
-make_docker_url "lamp" "https://hub.docker.com/r/linode/lamp/"
-
-make_docker_url "ubuntu-16-apache-php-5.6-drupal-8" "https://hub.docker.com/r/1and1internet/ubuntu-16-apache-php-5.6-drupal-8/"
-
-make_docker_url "ubuntu-16-nginx-php-7.1-wordpress-4" "https://hub.docker.com/r/1and1internet/ubuntu-16-nginx-php-7.1-wordpress-4/"
-
-make_docker_url "hhvm" "https://hub.docker.com/r/hhvm/hhvm/"
-
+# [resource] rsync-server: Simple rsync and sshd server based on Ubuntu bionic.
 make_docker_url "rsync-server" "https://hub.docker.com/r/apnar/rsync-server/"
 
-make_docker_url "cf_acceptance_tests_image" "https://hub.docker.com/r/wcp1/cf_acceptance_tests_image/"
-
+# [resource] ubuntu-node-chrome-selenium: Node, chrome, selenium set up to run integration tests.
 make_docker_url "ubuntu-node-chrome-selenium" "https://hub.docker.com/r/digitalgenius/ubuntu-node-chrome-selenium/"
 
-make_docker_url "npm-x86_64-ubuntu-node10" "https://hub.docker.com/r/resinci/npm-x86_64-ubuntu-node10/"
-
-make_docker_url "ubuntu-16-nginx-php-phpmyadmin-mariadb-10" "https://hub.docker.com/r/1and1internet/ubuntu-16-nginx-php-phpmyadmin-mariadb-10/"
-
+# [resource] Apache ActiveMQ: An open source message broker written in Java together with a full Java Message Service client.
 make_docker_url "activemq" "https://hub.docker.com/r/webcenter/activemq/"
 
+# [resource] ubuntu-graphite-grafana: Graphite & Grafana.
 make_docker_url "ubuntu-graphite-grafana" "https://hub.docker.com/r/1and1internet/ubuntu-graphite-grafana/"
 
+# [resource] docker-rails: Simple Rails application to demonstrate using Docker, Docker Hub, Docker Cloud and CI.
 make_docker_url "docker-rails" "https://hub.docker.com/r/ledermann/docker-rails/"
 
+# [resource] Express.js: Fast, unopinionated, minimalist web framework for Node.js.
 make_docker_url "express" "https://hub.docker.com/r/bitnami/express/"
 
+# [resource] Elasticsearch: A highly scalable open-source full-text search and analytics engine.
 make_docker_url "elasticsearch" "https://hub.docker.com/r/bitnami/elasticsearch/"
 
-make_docker_url "phabricator" "https://hub.docker.com/r/bitnami/phabricator/"
-
+# [resource] TensorFlow Serving: A flexible, high-performance serving system for machine learning models, designed for production environments.
 make_docker_url "tensorflow-serving" "https://hub.docker.com/r/bitnami/tensorflow-serving/"
 
+# [resource] Apache Solr: An open source enterprise search platform, written in Java, from the Apache Lucene project. 
 make_docker_url "solr" "https://hub.docker.com/r/bitnami/solr/"
 
+# [resource] Symfony: A set of reusable PHP components and a PHP framework to build web applications, APIs, microservices and web services.
 make_docker_url "symfony" "https://hub.docker.com/r/bitnami/symfony/"
 
+# [resource] CodeIgniter: An open-source software rapid development web framework, for use in building dynamic web sites with PHP.
 make_docker_url "codeigniter" "https://hub.docker.com/r/bitnami/codeigniter/"
 
+# [resource] Laravel: A free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony.
 make_docker_url "laravel" "https://hub.docker.com/r/bitnami/laravel/"
 
+# [resource] etcd: A distributed key value store that provides a reliable way to store data across a cluster of machines.
 make_docker_url "etcd" "https://hub.docker.com/r/bitnami/etcd/"
 
+# [resource] Prometheus: An open-source monitoring system with a dimensional data model, flexible query language, efficient time series database and modern alerting approach.
 make_docker_url "prometheus" "https://hub.docker.com/r/bitnami/prometheus/"
 
+# [resource] OAuth2 Proxy: A reverse proxy and static file server that provides authentication using providers (Google, GitHub, and others) to validate accounts by email, domain or group.
 make_docker_url "oauth2-proxy" "https://hub.docker.com/r/bitnami/oauth2-proxy/"
 
+# [resource] Cert-manager: A Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.
 make_docker_url "cert-manager" "https://hub.docker.com/r/bitnami/cert-manager/"
-
-make_docker_url "oraclelinux-base-buildpack" "https://hub.docker.com/r/bitnami/oraclelinux-base-buildpack/"
-
-make_docker_url "elasticsearch-prod" "https://hub.docker.com/r/bitnami/elasticsearch-prod/"
 
 make_docker_url "open-service-broker-azure" "https://hub.docker.com/r/bitnami/open-service-broker-azure/"
 
-make_docker_url "centos-base-buildpack" "https://hub.docker.com/r/bitnami/centos-base-buildpack"
-
+# [resource] NGINX Ingress Controller: An Ingress controller that uses NGINX to manage external access to HTTP services in a Kubernetes cluster.
 make_docker_url "nginx-ingress-controller" "https://hub.docker.com/r/bitnami/nginx-ingress-controller/"
 
+# [resource] Cluster Autoscaler: A tool that automatically adjusts the size of the Kubernetes cluster.
 make_docker_url "bitnami-docker-cluster-autoscaler" "https://hub.docker.com/r/bitnami/bitnami-docker-cluster-autoscaler/"
 
+# [resource] MediaWiki: A free and open-source wiki software.
 make_docker_url "mediawiki" "https://hub.docker.com/_/mediawiki/"
 
+# [resource] Spring Boot is a lightweight framework that takes most of the work out of configuring Spring-based applications.
 make_docker_url "spring-boot" "https://hub.docker.com/r/saturnism/spring-boot/"
 
+# [resource] Phoenix: A framework for building scalable web applications with realtime connectivity across all your devices.
 make_docker_url "phoenix" "https://hub.docker.com/r/marcelocg/phoenix/"
 
-make_docker_url "alpine-minikube" "https://hub.docker.com/r/whindes/alpine-minikube/"
-
+# [resource] PostGIS: Spatial objects for the PostgreSQL database, allowing storage and query of information about location and mapping.
 make_docker_url "postgis" "https://hub.docker.com/r/mdillon/postgis/"
 
+# [resource] Bigtable Emulator: An in memory Go implementation of Bigtable allowing to create integration tests and local development.
 make_docker_url "bigtable-emulator" "https://hub.docker.com/r/spotify/bigtable-emulator/"
 
+# [resource] Puppeteer: A Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol.
 make_docker_url "puppeteer" "https://hub.docker.com/r/alekzonder/puppeteer/"
 
+# [resource] PouchDB: An open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser.
 make_docker_url "pouchdb" "https://hub.docker.com/r/filiosoft/pouchdb/"
 
+# [resource] CockroachDB: A cloud-native SQL database for building global, scalable cloud services that survive disasters.
 make_docker_url "cockroach" "https://hub.docker.com/r/cockroachdb/cockroach/"
 
+# [resource] Lambda: Images that (very closely) mimic the live AWS Lambda environment.
 make_docker_url "lambda" "https://hub.docker.com/r/lambci/lambda/"
 
+# [resource] FoundationDB: The open source, distributed, transactional key-value store.
 make_docker_url "foundationdb" "https://hub.docker.com/r/bruienne/foundationdb/"
 
+# [resource] Microsoft SQL Server: A relational database management system developed by Microsoft.
 make_docker_url "mssql-server-linux" "https://hub.docker.com/r/microsoft/mssql-server-linux/"
 
-make_docker_url "dotnet" "https://hub.docker.com/r/microsoft/dotnet/"
-
+# [resource] Windows Server Core: is a minimal server installation option for the Windows Server 2008 R2 operating system.
 make_docker_url "windowsservercore" "https://hub.docker.com/r/microsoft/windowsservercore/"
 
+# [resource] ASP.NET Core: A lean and composable framework for building web and cloud applications.
 make_docker_url "aspnetcore" "https://hub.docker.com/r/microsoft/aspnetcore/"
-
-make_docker_url "iis" "https://hub.docker.com/r/microsoft/iis/"
-
 make_docker_url "aspnet" "https://hub.docker.com/r/microsoft/aspnet/"
 
-make_docker_url "azure-cli" "https://hub.docker.com/r/microsoft/azure-cli/"
+# [resource] Internet Information Services: An extensible web server created by Microsoft for use with the Windows NT family.
+make_docker_url "iis" "https://hub.docker.com/r/microsoft/iis/"
 
+# [resource] A developer platform for building all your apps.
 make_docker_url "dotnet-framework" "https://hub.docker.com/r/microsoft/dotnet-framework/"
+make_docker_url "dotnet" "https://hub.docker.com/r/microsoft/dotnet/"
 
+# [resource] Minideb: A small image based on Debian designed for use in containers.
 make_docker_url "minideb" "https://hub.docker.com/r/bitnami/minideb/"
 
+# [resource] StatsD: A front-end proxy for the Graphite/Carbon metrics server.
 make_docker_url "statsd" "https://hub.docker.com/r/jaconel/statsd/"
 
-# [container] LevelDB: An open source on-disk key-value store written by Google.
+# [resource] LevelDB: An open source on-disk key-value store written by Google.
 make_docker_url "leveldb" "https://hub.docker.com/r/ekristen/leveldb/"
 
-# [container] Cayley: a graph database by Google. 
+# [resource] Cayley: a graph database by Google. 
 make_docker_url "cayley" "https://hub.docker.com/r/saidimu/cayley/"
 
-# [container] jq.node: like jq but way more powerful.
+# [resource] jq.node: like jq but way more powerful.
 make_docker_url "jq-node" "https://hub.docker.com/r/fgribreau/jq.node/"
 
-# [container] Docker on the Desktop: Various Dockerfiles for desktops and servers.
+# [resource] Docker on the Desktop: Various Dockerfiles for desktops and servers.
 make_docker_url "docker-on-the-desktop" "https://github.com/jessfraz/dockerfiles"
 
-# [container] PostGraphile: An instant high-performance GraphQL API for your PostgreSQL database.
+# [resource] PostGraphile: An instant high-performance GraphQL API for your PostgreSQL database.
 make_docker_url "postgraphql" "https://hub.docker.com/r/postgraphql/postgraphql/"
 
 mkdir learning
@@ -850,16 +961,6 @@ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 rm erlang-solutions_1.0_all.deb
 sudo apt install -y elixir
-
-# [package] Ruby: A dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-git clone https://github.com/rbenv/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-echo "export PATH=$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims" >> ~/.bashrc
-echo "eval $(rbenv init -)" >> ~/.bashrc
-echo "export PATH=$HOME/.rbenv/plugins/ruby-build/bin:$PATH" >> ~/.bashrc
-rbenv install 2.3.0
-rbenv global 2.3.0
 
 # [package] Angry IP Scanner: The original IP scanner for Windows, Max and Linux. Fast, friendly, extensible, free and open-source. 
 wget https://github.com/angryip/ipscan/releases/download/3.5.3/ipscan_3.5.3_amd64.deb
