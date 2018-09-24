@@ -61,6 +61,7 @@ sudo apt install -y  libqt4-dev \
 # TODO: Remove
 sudo apt --fix-broken install -y
 
+# [package] Python: An interpreted high-level programming language for general-purpose programming.
 sudo apt install -y python-pip \
                     python-dev \
                     python-dev \
@@ -85,85 +86,127 @@ sudo apt install -y python-pip \
 
 sudo pip3 install --upgrade pip
 
+# [package] MyCLI: A command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting.
 sudo pip install -U mycli
+
+# [package] Awesome Finder: A TUI based finder for searching the "awesome" resources.
 sudo pip install awesome-finder
+
+# [package] aws-cli: Universal Command Line Interface for Amazon Web Services.
 sudo pip install awscli
-sudo pip install beautifulsoup4 requests ipython
+
+# [package] IPython: A command shell for interactive computing in multiple programming languages.
+sudo pip install ipython
+
+# [package] Hy: A dialect of Lisp that's embedded in Python.
 sudo pip install git+https://github.com/hylang/hy.git
-sudo pip install gitgud
+
+# [package] haxor-news: A Hacker News command line interface (CLI).
 sudo pip install haxor-news
+
+# [package] orange: Open source machine learning and data visualization for novice and expert.
 sudo pip install orange3
+
+# [package] Jupyter Qt Console: A rich Qt-based console for working with Jupyter kernels, supporting rich media output, session export, and more.
 sudo pip install qtconsole
+
+# [package] RTV: A text-based interface to view and interact with reddit.
 sudo pip install rtv
+
+# [package] thefuck: Magnificent app which corrects your previous console command.
 sudo pip install thefuck
+
+# [package] troposphere: Python library to create AWS CloudFormation descriptions.
 sudo pip install troposphere
+
+# [package] Jupyter: Tool to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
 sudo pip install jupyter
 
+# [package] net-tools: A collection of programs that form the base set of the NET-3 networking distribution for the Linux operating system.
 sudo apt install -y net-tools
 
+# [package] Aircrack-ng: A complete suite of tools to assess WiFi network security.
 sudo apt install -y aircrack-ng
 
+# [package] DBeaver: An SQL client and a database administration tool. For relational databases.
 sudo add-apt-repository -y ppa:serge-rider/dbeaver-ce
 sudo apt update -y
 sudo apt install -y dbeaver-ce
 
+# [package] R: Aprogramming language and free software environment for statistical computing and graphics.
 sudo apt install -y r-base r-base-dev
 
 sudo apt install -y git-extras gitk apt-transport-https
 
-# TODO: put organize these in the proper place
+# TODO: Organize these in the proper place
 sudo apt-add-repository -y "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-6.0 main"
 sudo add-apt-repository -y ppa:hvr/ghc
 sudo add-apt-repository -y ppa:marutter/rrutter
 sudo add-apt-repository -y ppa:ultradvorka/ppa
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 
+# [package] GNU Octave: A programming language for scientific computing.
 sudo apt install -y octave
 
+# [package] Scientific PYthon Development EnviRonment: a powerful interactive development environment for the Python language.
 sudo apt install -y spyder
 
+# [package] Byte CALculator: Tool for storage-specific numerical calculations, expressions, unit conversions or address calculations frequently.
 sudo apt install -y bcal
 
+# [package] GNOME Boxes: An application of the GNOME Desktop Environment, used to access remote or virtual systems.
 sudo apt install -y gnome-boxes
 
+# [package] Bucklespring: Nostalgia bucklespring keyboard sound emulator.
 sudo apt install -y bucklespring
 
 sudo apt install -y cabal-install
 
+# [package] Clang: A compiler front end for the programming languages C, C++, Objective-C, Objective-C++, OpenMP, OpenCL, and CUDA.
 sudo apt install -y clang
 sudo apt install -y clang-6.0
 
+# [package] Common Lisp: A dialect of the Lisp programming language, published in ANSI standard document ANSI INCITS 226-1994.
 sudo apt install -y clisp
 
+# [package] Concurrent Versions System: A version control system, an important component of Source Configuration Management (SCM).
 sudo apt install -y cvs
 
+# [package] Dia: Free (open source) drawing software.
 sudo apt install -y dia
 
+# [package] Java Runtime Environment: A freely available software distribution containing a stand-alone JVM.
 sudo apt install -y default-jre
 
+# [package] unix2dos: A tool to convert line breaks in a text file from Unix format to DOS format and vice versa.
 sudo apt install -y dos2unix
 
+# [package] DOSBox: An emulator program which emulates an IBM PC compatible computer running a DOS operating system.
 sudo apt install -y dosbox
 
+# [package] Duplicity: Backs directories by producing encrypted tar-format volumes and uploading them to a remote or local file server.
 sudo apt install -y duplicity
 
+# [package] FileZilla: A free software, cross-platform FTP application.
 sudo apt install -y filezilla
 
+# [package] Free Pascal Compiler: A compiler for the closely related programming language dialects, Pascal and Object Pascal.
 sudo apt install -y fp-compiler
 
+# [package] F#: A strongly typed, multi-paradigm programming language that encompasses functional, imperative, and object-oriented programming methods.
 sudo apt install -y fsharp
 
+# [package] The GNU Compiler Collection: Front ends for C, C++, Objective-C, Fortran, Ada, and Go.
 sudo add-apt-repository -y ppa:jonathonf/gcc-7.1
 sudo apt install -y gcc-7
 
+# [package] The GNU Debugger: A portable debugger that runs on many Unix-like systems and works for many programming languages.
 sudo apt install -y gdb
 
+# [package] Glasgow Haskell Compiler: An open source native code compiler for the functional programming language Haskell.
 sudo apt install -y ghc-8.0.2
 
-sudo apt install -y gfortran
-
-sudo apt install -y gnat
-
+# [package] GNU Privacy Guard: A free-software replacement for Symantec's PGP cryptographic software suite.
 sudo apt install -y gnupg
 
 sudo apt install -y gnustep-devel
@@ -720,75 +763,95 @@ make_docker_url "minideb" "https://hub.docker.com/r/bitnami/minideb/"
 
 make_docker_url "statsd" "https://hub.docker.com/r/jaconel/statsd/"
 
+# [container] LevelDB: An open source on-disk key-value store written by Google.
 make_docker_url "leveldb" "https://hub.docker.com/r/ekristen/leveldb/"
 
+# [container] Cayley: a graph database by Google. 
 make_docker_url "cayley" "https://hub.docker.com/r/saidimu/cayley/"
 
+# [container] jq.node: like jq but way more powerful.
 make_docker_url "jq-node" "https://hub.docker.com/r/fgribreau/jq.node/"
 
+# [container] Docker on the Desktop: Various Dockerfiles for desktops and servers.
 make_docker_url "docker-on-the-desktop" "https://github.com/jessfraz/dockerfiles"
 
+# [container] PostGraphile: An instant high-performance GraphQL API for your PostgreSQL database.
 make_docker_url "postgraphql" "https://hub.docker.com/r/postgraphql/postgraphql/"
-
 
 mkdir learning
 
 cd learning
 
-git clone https://github.com/kevva/viewport-list-cli
+# [resource] viewport-list-cli: A list of devices and their viewports.
+git clone https://github.com/kevva/viewport-list-cli.git
 
+# [resource] Quirk: A drag-and-drop quantum circuit simulator that runs in your browser.
 git clone https://github.com/Strilanc/Quirk.git
 
+# [resource] Polyhedra Viewer: Explore the relationships between convex regular-faced polyhedra.
 git clone https://github.com/tesseralis/polyhedra-viewer.git
 
+# [resource] Make a Lisp: Mal is a Clojure inspired Lisp interpreter.
 git clone https://github.com/kanaka/mal.git
 
+# [resource] Project Euler solutions: Runnable code for solving Project Euler problems in Java, Python, Mathematica, Haskell.
 git clone https://github.com/nayuki/Project-Euler-solutions.git
 
-git clone https://github.com/openzim/sotoki.git
-
+# [resource] Big-O Poster: Big-O Complexities / Poster of common algorithms used in Computer Science.
 git clone https://github.com/ro31337/bigoposter.git
 
+# [resource] JavaScript Algorithms and Data Structures: Algorithms and data structures implemented in JavaScript with explanations and links to further readings.
 git clone https://github.com/trekhleb/javascript-algorithms.git
 
+# [resource] todomvc: Tool to help you select an MV* framework.
 git clone https://github.com/tastejs/todomvc.git
 
+# [resource] Free Programming Books: Freely available programming books.
 git clone https://github.com/EbookFoundation/free-programming-books.git
 
+# [resource] Every Programmer Should Know: A collection of (mostly) technical things every software developer should know.
 git clone https://github.com/mtdvio/every-programmer-should-know.git
 
+# [resource] Papers We Love: Papers from the computer science community to read and discuss.
 git clone https://github.com/papers-we-love/papers-we-love.git
 
+# [resource] Design Patterns for Humans: An ultra-simplified explanation to design patterns.
 git clone https://github.com/kamranahmedse/design-patterns-for-humans.git
 
+# [resource] learn-regex: Learn regex the easy way.
 git clone https://github.com/zeeshanu/learn-regex.git
 
+# [resource] RealWorld: The mother of all demo apps.
 git clone https://github.com/gothinkster/realworld.git
 
+# [resource] Functional Programming Jargon: Jargon from the functional programming world in simple terms.
 git clone https://github.com/hemanth/functional-programming-jargon.git
 
+# [resource] Mostly Adequate Guide: Mostly adequate guide to functional programming. 
 wget https://legacy.gitbook.com/download/pdf/book/mostly-adequate/mostly-adequate-guide
 
 cd ..
 
+# [package] Spacevim: A community-driven modular vim distribution.
 curl -sLf https://spacevim.org/install.sh | bash
 
+# [package] lolcat: Rainbow console.
 sudo gem install lolcat
 
-git config --global diff.tool meld
-git config --global merge.tool meld
-git config --global --add difftool.prompt false
-
+# [package] React Starter Kit: Isomorphic web app boilerplate.
 git clone https://github.com/kriasoft/react-starter-kit.git
 
+# [package] Idris: A general purpose pure functional programming language with dependent types.
 cabal update
 cabal install idris
 
+# [package] Elixir: A functional, concurrent, general-purpose programming language that runs on the Erlang virtual machine.
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 sudo dpkg -i erlang-solutions_1.0_all.deb
 rm erlang-solutions_1.0_all.deb
 sudo apt install -y elixir
 
+# [package] Ruby: A dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
@@ -798,66 +861,84 @@ echo "export PATH=$HOME/.rbenv/plugins/ruby-build/bin:$PATH" >> ~/.bashrc
 rbenv install 2.3.0
 rbenv global 2.3.0
 
+# [package] Angry IP Scanner: The original IP scanner for Windows, Max and Linux. Fast, friendly, extensible, free and open-source. 
 wget https://github.com/angryip/ipscan/releases/download/3.5.3/ipscan_3.5.3_amd64.deb
 sudo dpkg -i ipscan_3.5.3_amd64.deb
 rm ipscan_3.5.3_amd64.deb
 
+# [package] bat: A cat(1) clone with syntax highlighting and Git integration.
 wget https://github.com/sharkdp/bat/releases/download/v0.6.1/bat_0.6.1_amd64.deb
 sudo dpkg -i bat_0.6.1_amd64.deb
 rm bat_0.6.1_amd64.deb
 
+# [package] News at Command Line: Tool to be kept updated without visiting the news portals.
 git clone https://github.com/Griffintaur/News-At-Command-Line.git
 cd News-At-Command-Line
 pip install -r requirements.txt
 python setup.py install
 cd ..
 
+# [package] Sass: The most mature, stable, and powerful professional grade CSS extension language in the world.
 sudo gem install sass
 
+# [package] Composer: An application-level package manager for the PHP programming language.
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 sudo chmod +x /usr/local/bin/composer
 
+# [package] Create React App: Create apps with no build configuration.
 git clone https://github.com/facebook/create-react-app.git
 
+# [package] jRegExAnalyser: An interactive tool to write, test, debug, analyse and profile regular expressions. 
 wget http://jregexanalyser.schwebke.com/jregexanalyser/jRegExAnalyser-1_4_0.zip
 unzip jRegExAnalyser-1_4_0.zip
 rm jRegExAnalyser-1_4_0.zip
 
+# [package] Spring Tool Suite: An extended IDE of Eclipse. It specializes in developing Spring applications. 
 wget https://download.springsource.com/release/STS/3.9.5.RELEASE/dist/e4.8/spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 tar -xvf spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 rm spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
 
+# [package] Emacs: A family of text editors that are characterized by their extensibility.
 sudo apt install -y emacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
+# [package] Minikube: A tool that makes it easy to run Kubernetes locally.
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.2/minikube-linux-amd64
 chmod +x minikube
 sudo mv minikube /usr/local/bin/
 
+# [package] electron-react-boilerplate: A boilerplate for Scalable Cross-Platform Desktop Apps based on Electron, React, Redux, React Router, and Webpack. 
 git clone https://github.com/chentsulin/electron-react-boilerplate.git
 
+# [package] Elm: A domain-specific programming language for declaratively creating web browser-based graphical user interfaces.
 wget "https://github.com/elm/compiler/releases/download/0.19.0/binaries-for-linux.tar.gz"
 tar xzf binaries-for-linux.tar.gz
 mv elm /usr/local/bin/
 rm binaries-for-linux.tar.gz
 
+# [package] electron-quick-start: A minimal Electron application.
 git clone https://github.com/electron/electron-quick-start
 
+# [package] Terraform: Terraform is an infrastructure as code software by HashiCorp.
 wget https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip
 unzip terraform_0.11.8_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 rm terraform_0.11.8_linux_amd64.zip
 
+# [resource] The Big List of Naughty Strings: A list of strings which have a high probability of causing issues when used as user-input data.
 git clone https://github.com/minimaxir/big-list-of-naughty-strings.git
 
+# [package] Clib: C package manager-ish.
 sudo apt-get install libcurl4-gnutls-dev -qq
 git clone https://github.com/clibs/clib.git /tmp/clib && cd /tmp/clib
 make
 sudo make install
 
+# [package] Jekyll: A simple, blog-aware, static site generator for personal, project, or organization sites.
 sudo gem install bundler jekyll
 
 # TODO: This is interactive (asks for password) but it is needed. Putting at bottom to not half execution.
+# [package] Oh-My-Zsh: A delightful, open source, community-driven framework for managing your ZSH configuration.
 curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
 ZSHRC_HELPERS=/home/`whoami`/Desktop/System/personas/engineer/zshrc_helpers.sh
