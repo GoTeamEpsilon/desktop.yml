@@ -92,7 +92,7 @@ sudo apt install -y openshot-qt
 # [package] LAME: A high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL.
 sudo apt install -y lame
 
-# [package] PulseAudio is a network-capable sound server program distributed via the freedesktop.org project.
+# [package] PulseAudio: A network-capable sound server program distributed via the freedesktop.org project.
 sudo snap install pulseaudio
 
 # [package] JACK: A professional sound server daemon that provides real-time, low-latency connections for both audio and MIDI.

@@ -41,7 +41,7 @@ sudo apt install -y usb-creator-gtk
 # [package] Mozilla Firefox: A free and open-source web browser developed by Mozilla Foundation.
 sudo apt install -y firefox
 
-# [package] ARandR is designed to provide a simple visual front end for XRandR.
+# [package] ARandR: Designed to provide a simple visual front end for XRandR.
 sudo apt install -y arandr
 
 # [package] GNU Binutils: A collection of binary tools.
