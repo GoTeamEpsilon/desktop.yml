@@ -18,7 +18,7 @@ with open("docs.md", "wa") as outfile:
                     desc = split[1]
                     type = left[left.find("[")+1:left.find("]")]
                     name = left.split("] ")[1]
-                    outfile.write("## " + name + "\n")
+                    outfile.write("\n### " + name + "\n")
                     outfile.write("[" + type + "]" + desc)
 
                 line = fp.readline()
