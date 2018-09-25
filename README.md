@@ -12,6 +12,8 @@ Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Ant
 sh -c "$(wget https://raw.githubusercontent.com/GoTeamEpsilon/System/master/install.sh -O -)"
 ```
 
+_Note: During this install as well as subsequent Persona installs, you'll need to ensure you have an active internet connection and your computer doesn't go to sleep._
+
 ## Personas
 
 #### General
