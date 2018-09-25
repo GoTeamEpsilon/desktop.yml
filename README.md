@@ -6,7 +6,7 @@
 
 _(Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))_
 
-1. Install [Ubuntu](https://www.ubuntu.com/download/desktop) or [Xubuntu](https://xubuntu.org/) (preferred) _(note: any Linux operating system with `snap` and `apt` is supported)_.
+1. Install [Ubuntu](https://www.ubuntu.com/download/desktop) or [Xubuntu](https://xubuntu.org/) (preferred) _(note: any Ubuntu Linux operating system with `snap` and `apt` is supported)_.
 2. Ensure you have an active internet connection and sleep mode is off for your PC. 
 3. Execute the following command in the terminal:
 ```
