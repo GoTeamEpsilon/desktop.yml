@@ -174,7 +174,7 @@ sudo apt install -y gnome-tweak-tool
 sudo apt install -y nautilus-dropbox
 
 # [package] Wine: Run Windows applications on Linux, BSD, Solaris and macOS.
-sudo apt install wine64
+sudo apt install -y wine64
 
 # [package] Whatever: An unofficial Evernote desktop client for Linux.
 sudo apt install -y gconf2 gconf-service libappindicator1 gconf-service-backend libgconf-2-4 gconf2-common libindicator7
