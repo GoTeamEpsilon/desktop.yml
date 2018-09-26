@@ -8,24 +8,15 @@
 
 cd /home/`whoami`/Desktop/
 
-make_clinical_url() {
-eval name="$1"
-eval url="$2"
-
-touch ${name}.desktop
-
+# [package] OpenEMR: The most popular open source electronic health records and medical practice management solution.
 echo -e "
 [Desktop Entry]
 Encoding=UTF-8
-Name=${name}
+Name=OpenEMR Install
 Type=Link
-URL=${url}
+URL=https://aws.amazon.com/marketplace/pp/B07BBT4C1H/
 Icon=text-html
-" > ${name}.desktop
-}
-
-# [package] OpenEMR: The most popular open source electronic health records and medical practice management solution.
-make_clinical_url "OpenEMR Install" "https://aws.amazon.com/marketplace/pp/B07BBT4C1H/" 
+" > OpenEMR\ Install.desktop
 
 # [package] 3D Slicer: An open source software platform for medical image informatics, image processing, and three-dimensional visualization.
 sudo apt install -y libosmesa6-dev libglu1-mesa-dev libfontconfig-dev libxrender-dev libncurses5-dev
