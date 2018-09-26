@@ -3,9 +3,10 @@
 
 cd /home/`whoami`/Desktop/
 
-# [package] Ardour: a hard disk recorder and digital audio workstation application.
-sudo add-apt-repository -y ppa:dobey/audiotools
-yes | sudo apt install -y ardour
+# TODO: make this non-interactive
+# [pending-package] Ardour: a hard disk recorder and digital audio workstation application.
+# sudo add-apt-repository -y ppa:dobey/audiotools
+# yes | sudo apt install -y ardour
 
 # [package] Darktable: An open source photography workflow application and raw developer.
 sudo apt install -y darktable
