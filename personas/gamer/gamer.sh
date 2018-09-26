@@ -100,5 +100,9 @@ sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/source
 sudo apt update -y
 sudo apt install -y playonlinux
 
+# [package] Red Eclipse: A free arena shooter.
+wget https://github.com/red-eclipse/deploy/releases/download/appimage_continuous_stable/redeclipse-stable-x86_64.AppImage
+sudo chmod +x redeclipse-stable-x86_64.AppImage
+
 # [resource] Games: A list of popular/awesome videos games, add-ons, maps, etc. hosted on GitHub.
 git clone https://github.com/leereilly/games.git
