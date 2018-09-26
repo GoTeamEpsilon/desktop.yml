@@ -1183,6 +1183,9 @@
 ### PlayOnLinux
 [package] Allows you to play your favorite games on Linux easily.
 
+### Red Eclipse
+[package] A free arena shooter.
+
 ### Games
 [resource] A list of popular/awesome videos games, add-ons, maps, etc. hosted on GitHub.
 
@@ -1205,9 +1208,6 @@
 
 # Creative
 
-
-### Ardour
-[package] a hard disk recorder and digital audio workstation application.
 
 ### Darktable
 [package] An open source photography workflow application and raw developer.
