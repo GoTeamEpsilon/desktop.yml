@@ -47,7 +47,7 @@ _Packages: [docs.md#creative](https://github.com/GoTeamEpsilon/System/blob/maste
 
 The clinician persona offers an advanced medical imaging viewer, native views of common clinicial references, and an install link to the popular OpenEMR Cloud Standard EHR.
 
-_Install:_ `cd ~/Desktop/System/personas/creative && ./creative.sh`
+_Install:_ `cd ~/Desktop/System/personas/clinician && ./clinician.sh`
 
 _Packages: [docs.md#clinician](https://github.com/GoTeamEpsilon/System/blob/master/personas/docs.md#clinician)_
 
