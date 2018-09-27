@@ -58,4 +58,8 @@ _Packages: [docs.md#clinician](https://github.com/GoTeamEpsilon/System/blob/mast
 
 [Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new). Support us on [Patreon](https://www.patreon.com/matthewvi).
 
+_Project sub-team:_
+- QA: [Dr. Andre Millet](https://github.com/andremillet)
+- Code: [Matthew Vi](https://github.com/matthewvi)
+
 License: Public Domain (CC0)
