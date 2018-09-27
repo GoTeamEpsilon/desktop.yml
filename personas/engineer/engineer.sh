@@ -1,5 +1,5 @@
 #!/bin/bash
-# System 💖
+# Engineer Persona 👩‍💻
 
 cd /home/`whoami`/Desktop/
 
@@ -1042,7 +1042,7 @@ sudo gem install bundler jekyll
 # [package] Oh-My-Zsh: A delightful, open source, community-driven framework for managing your ZSH configuration.
 curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
-ZSHRC_HELPERS=/home/`whoami`/Desktop/System/personas/engineer/zshrc_helpers.sh
+ZSHRC_HELPERS=/home/`whoami`/Desktop/PersonaScripts/personas/engineer/zshrc_helpers.sh
 ZSHRC=~/.zshrc
 
 cat "$ZSHRC_HELPERS" >> "$ZSHRC"

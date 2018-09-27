@@ -1,5 +1,5 @@
 #!/bin/bash
-# System 💖
+# Clinician Persona ⚕️
 
 # TODOs:
 #   - Local OpenEMR with NAMCS dataset

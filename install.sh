@@ -1,10 +1,10 @@
 #!/bin/bash
-# System 💖
+# Persona Scripts 💖
 
 cd ~/Desktop
-wget https://github.com/GoTeamEpsilon/System/archive/master.zip
+wget https://github.com/GoTeamEpsilon/PersonaScripts/archive/master.zip
 unzip master.zip
-mv System-master System
+mv PersonaScripts-master PersonaScripts
 rm master.zip
-cd System/personas/general
+cd PersonaScripts/personas/general
 ./general.sh

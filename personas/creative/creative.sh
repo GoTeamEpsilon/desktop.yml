@@ -1,5 +1,5 @@
 #!/bin/bash
-# System 💖
+# Creative Persona 🎨
 
 cd /home/`whoami`/Desktop/
 

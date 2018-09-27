@@ -1,5 +1,5 @@
 #!/bin/bash
-# System 💖
+# General Persona 💻
 
 cd /home/`whoami`/Desktop
 

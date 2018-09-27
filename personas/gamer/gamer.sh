@@ -1,5 +1,5 @@
 #!/bin/bash
-# System 💖
+# Gamer Persona 🎮
 
 cd /home/`whoami`/Desktop/
 
