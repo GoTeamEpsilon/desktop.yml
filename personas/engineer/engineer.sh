@@ -992,6 +992,8 @@ git clone https://github.com/facebook/create-react-app.git
 # [package] jRegExAnalyser: An interactive tool to write, test, debug, analyse and profile regular expressions. 
 wget http://jregexanalyser.schwebke.com/jregexanalyser/jRegExAnalyser-1_4_0.zip
 unzip jRegExAnalyser-1_4_0.zip
+./jRegExAnalyser-1_4_0/jregexanalyser
+./jRegExAnalyser-1_4_0/jregexanalyser-install
 rm jRegExAnalyser-1_4_0.zip
 
 # [package] Spring Tool Suite: An extended IDE of Eclipse. It specializes in developing Spring applications. 
