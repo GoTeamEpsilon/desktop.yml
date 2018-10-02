@@ -30,7 +30,7 @@ sudo apt install -y build-essential \
                     ca-certificates
 
 # Abstracting this to general because npm is not strictly for the engineer persona (used in clinician). 
-# [package] Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine. 
+# [no-report-package] Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine. 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo apt install -y npm
