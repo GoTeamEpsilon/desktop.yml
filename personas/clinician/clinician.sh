@@ -21,7 +21,7 @@ wget http://slicer.kitware.com/midas3/download/bitstream/738960/Slicer-4.8.1-lin
 tar xvf Slicer-4.8.1-linux-amd64.tar.gz
 rm Slicer-4.8.1-linux-amd64.tar.gz
 mv Slicer-4.8.1-linux-amd64/ Slicer-Dicom-Viewer
-wget https://www.slicer.org/w/images/0/05/Logo-3DSlicer.png -O /usr/share/pixmaps/slicer.png
+sudo wget https://www.slicer.org/w/images/0/05/Logo-3DSlicer.png -O /usr/share/pixmaps/slicer.png
 echo "
 [Desktop Entry]
 Name=Slicer
@@ -30,13 +30,15 @@ Exec=/home/`whoami`/Desktop/Slicer-Dicom-Viewer/Slicer
 Icon=/usr/share/pixmaps/slicer.png
 Terminal=false
 Type=Graphics
-" >> /usr/share/applications/slicer.desktop
+" >> slicer.desktop
+
+sudo mv slicer.desktop /usr/share/applications
 
 sudo npm install nativefier -g
 
 # [resource] NIH PubMed: Comprises more than 28 million citations for biomedical literature from MEDLINE, life science journals, and online books.
 nativefier --name "NIH Pubmed" "https://www.ncbi.nlm.nih.gov/pubmed/"
-wget https://www.nlm.nih.gov/about/logos_nlm_photos/pubmed_logo.png -O /usr/share/pixmaps/nih-pubmed.png
+sudo wget https://www.nlm.nih.gov/about/logos_nlm_photos/pubmed_logo.png -O /usr/share/pixmaps/nih-pubmed.png
 echo "
 [Desktop Entry]
 Name=Pubmed
@@ -44,13 +46,15 @@ Comment=
 Exec=/home/`whoami`/Desktop/nih-pubmed-linux-x64/nih-pubmed
 Icon=/usr/share/pixmaps/nih-pubmed.png
 Terminal=false
-Type=Internet
-" >> /usr/share/applications/pubmed.desktop
+Type=Application
+" >> pubmed.desktop 
+
+sudo mv pubmed.desktop /usr/share/applications/
 
 # [resource] MedScape: Medical news, thought leader perspectives, clinical trial coverage, drug updates, journal articles, CME activities & more.
 nativefier --name "Medscape Reference" "https://reference.medscape.com/"
 
-wget https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Medscape_Logo.svg/320px-Medscape_Logo.svg.png -O /usr/share/pixmaps/medscape.png
+sudo wget https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Medscape_Logo.svg/320px-Medscape_Logo.svg.png -O /usr/share/pixmaps/medscape.png
 echo "
 [Desktop Entry]
 Name=Medscape
@@ -58,13 +62,15 @@ Comment=
 Exec=/home/`whoami`/Desktop/medscape-reference-linux-x64/medscape-reference
 Icon=/usr/share/pixmaps/medscape.png
 Terminal=false
-Type=Internet
-" >> /usr/share/applications/medscape.desktop
+Type=Application
+" >> medscape.desktop
+
+sudo mv medscape.desktop /usr/share/applications
 
 # [resource] ICD-10 Codes Lookup: Tool dedicated exclusively to helping you look up ICD-10 codes.
 nativefier --name "ICD Code Lookup" "https://icdcodelookup.com/icd-10/codes"
 
-wget https://sdaho.org/wp-content/uploads/2017/05/cmslogofeat2.jpg -O /usr/share/pixmaps/icd10.png
+sudo wget https://sdaho.org/wp-content/uploads/2017/05/cmslogofeat2.jpg -O /usr/share/pixmaps/icd10.png
 echo "
 [Desktop Entry]
 Name=ICD10
@@ -72,5 +78,8 @@ Comment=
 Exec=/home/`whoami`/Desktop/icd-code-lookup-linux-x64/icd-code-lookup
 Icon=/usr/share/pixmaps/icd10.png
 Terminal=false
-Type=Internet
-" >> /usr/share/applications/icd10.desktop
+Type=Application
+" >> icd10.desktop
+
+sudo mv icd10.desktop /usr/share/applications
+
