@@ -1,10 +1,7 @@
 #!/bin/bash
 # Clinician Persona ⚕️
 
-# TODOs:
-#   - Local OpenEMR with NAMCS dataset
-#   - Make menu links for each package
-#   - More software and curated resources
+sudo -v
 
 cd /home/`whoami`/Desktop/
 
@@ -66,3 +63,14 @@ Type=Internet
 
 # [resource] ICD-10 Codes Lookup: Tool dedicated exclusively to helping you look up ICD-10 codes.
 nativefier --name "ICD Code Lookup" "https://icdcodelookup.com/icd-10/codes"
+
+wget https://sdaho.org/wp-content/uploads/2017/05/cmslogofeat2.jpg -O /usr/share/pixmaps/icd10.png
+echo "
+[Desktop Entry]
+Name=ICD10
+Comment=
+Exec=/home/`whoami`/Desktop/icd-code-lookup-linux-x64/icd-code-lookup
+Icon=/usr/share/pixmaps/icd10.png
+Terminal=false
+Type=Internet
+" >> /usr/share/applications/icd10.desktop

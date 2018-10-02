@@ -1,6 +1,8 @@
 #!/bin/bash
 # Creative Persona 🎨
 
+sudo -v
+
 cd /home/`whoami`/Desktop/
 
 # TODO: make this non-interactive

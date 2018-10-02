@@ -1,6 +1,8 @@
 #!/bin/bash
 # Gamer Persona 🎮
 
+sudo -v
+
 cd /home/`whoami`/Desktop/
 
 # [package] Yabause: A Sega Saturn Emulator for Linux, Windows and Mac OS X.

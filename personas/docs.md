@@ -12,62 +12,32 @@
 ### ARandR
 [package] Designed to provide a simple visual front end for XRandR.
 
-### GNU Binutils
-[package] A collection of binary tools.
-
 ### Blueman
 [package] Graphical bluetooth manager.
 
 ### ClamAV
 [package] An open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.
 
-### Brasero
-[package] A free disc-burning program for Unix-like systems.
-
 ### ClamTk
 [package] An easy to use, light-weight, on-demand virus scanner for Linux systems.
+
+### Brasero
+[package] A free disc-burning program for Unix-like systems.
 
 ### ClipIt
 [package] A lightweight GTK+ clipboard manager.
 
-### cowsay
-[package] A program that generates ASCII pictures of a cow with a message.
-
 ### FocusWriter
 [package] A simple, distraction-free writing environment.
-
-### fortune-mod
-[package] Implementation of the Unix fortune command for displaying a random quotation.
 
 ### Freeplane
 [package] A free, open source software application for creating mind maps, and electronic outlines.
 
-### gettext
-[package] An internationalization and localization system commonly used for writing multilingual programs.
-
-### glee-dev
-[package] Seamless support for OpenGL functions.
-
 ### Orca
 [package] Accessible screen reader.
 
-### htop
-[package] An interactive system-monitor process-viewer and process-manager. 
-
-### Iotop
-[package] A Python program with a top like UI used to show of behalf of which process is the I/O going on.
-
 ### NCurses Disk Usage
 [package] A disk usage analyzer with an ncurses interface.
-
-### Ninja
-[package] A small build system with a focus on speed.
-
-### The Meson Build system
-[package] An open source build system meant to be both extremely fast, and, as user friendly as possible. 
-
-### NTP
-[package] A TCP/IP protocol for synchronizing time over a network.
 
 ### OpenSSH
 [package] The premier connectivity tool for remote login with the SSH protocol.
@@ -77,9 +47,6 @@
 
 ### Pidgin
 [package] Graphical multi-protocol instant messaging client for X.
-
-### pydf
-[package] Colourised df(1)-clone.
 
 ### Rcconf
 [package] Tool to control which services are started when the system boots up or reboots.
