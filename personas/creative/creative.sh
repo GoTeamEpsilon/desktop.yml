@@ -141,8 +141,17 @@ sudo dpkg -i helm_0.9.0_amd64_r.deb
 rm helm_0.9.0_amd64_r.deb
 
 # [package] Giada: A compact and portable virtual loop machine device for Linux, Mac and Window.
-wget https://www.giadamusic.com/data/Giada-0.15.2-x86_64.AppImage
-
+wget https://www.giadamusic.com/data/Giada-0.15.2-x86_64.AppImage -O /usr/local/bin/giada
+wget https://github.com/monocasual/giada/raw/2a3496ac4c0a546974030e7135f21aaf218af7e0/extras/giada-logo.png -O /usr/share/pixmaps/giada.png
+echo '
+[Desktop Entry]
+Name=Giada
+Comment=
+Exec=/usr/local/bin/giada
+Icon=/usr/share/pixmaps/giada.png
+Terminal=false
+Type=Multimedia
+' >> /usr/share/applications/giada.desktop
 
 # TODO:
 # http://linuxsampler.org/
