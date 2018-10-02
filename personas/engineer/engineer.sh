@@ -1,6 +1,8 @@
 #!/bin/bash
 # Engineer Persona 👩‍💻
 
+sudo -v
+
 cd /home/`whoami`/Desktop/
 
 sudo apt -y update

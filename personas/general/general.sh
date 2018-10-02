@@ -1,6 +1,8 @@
 #!/bin/bash
 # General Persona 💻
 
+sudo -v
+
 cd /home/`whoami`/Desktop
 
 sudo locale-gen en_US en_US.UTF-8
@@ -30,7 +32,7 @@ sudo apt install -y build-essential \
                     ca-certificates
 
 # Abstracting this to general because npm is not strictly for the engineer persona (used in clinician). 
-# [no-report-package] Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine. 
+# [package:no-report] Node.js: A JavaScript runtime built on Chrome's V8 JavaScript engine. 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo apt install -y npm
@@ -44,7 +46,7 @@ sudo apt install -y firefox
 # [package] ARandR: Designed to provide a simple visual front end for XRandR.
 sudo apt install -y arandr
 
-# [package] GNU Binutils: A collection of binary tools.
+# [package:no-report] GNU Binutils: A collection of binary tools.
 sudo apt install -y binutils
 
 # [package] Blueman: Graphical bluetooth manager.
@@ -53,55 +55,40 @@ sudo apt install -y blueman
 # [package] ClamAV: An open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.
 sudo apt install -y clamav
 
-# [package] Brasero: A free disc-burning program for Unix-like systems.
-sudo apt install -y brasero
-
-# TODO: Is this needed?
-# sudo apt install -y bridge-utils
-
 # [package] ClamTk: An easy to use, light-weight, on-demand virus scanner for Linux systems.
 sudo apt install -y clamtk
+
+# [package] Brasero: A free disc-burning program for Unix-like systems.
+sudo apt install -y brasero
 
 # [package] ClipIt: A lightweight GTK+ clipboard manager.
 sudo apt install -y clipit
 
-# [package] cowsay: A program that generates ASCII pictures of a cow with a message.
-sudo apt install -y cowsay
-
 # [package] FocusWriter: A simple, distraction-free writing environment.
 sudo apt install -y focuswriter
-
-# [package] fortune-mod: Implementation of the Unix fortune command for displaying a random quotation.
-sudo apt install -y fortune-mod
 
 # [package] Freeplane: A free, open source software application for creating mind maps, and electronic outlines.
 sudo apt install -y freeplane
 
-# [package] gettext: An internationalization and localization system commonly used for writing multilingual programs.
-sudo apt install -y gettext
-
-# [package] glee-dev: Seamless support for OpenGL functions.
-sudo apt install -y glee-dev
-
 # [package] Orca: Accessible screen reader.
 sudo apt install -y gnome-orca
 
-# [package] htop: An interactive system-monitor process-viewer and process-manager. 
+# [package:no-report] htop: An interactive system-monitor process-viewer and process-manager. 
 sudo apt install -y htop
 
-# [package] Iotop: A Python program with a top like UI used to show of behalf of which process is the I/O going on.
+# [package:no-report] Iotop: A Python program with a top like UI used to show of behalf of which process is the I/O going on.
 sudo apt install -y iotop
 
 # [package] NCurses Disk Usage: A disk usage analyzer with an ncurses interface.
 sudo apt install -y ncdu
 
-# [package] Ninja: A small build system with a focus on speed.
+# [package:no-report] Ninja: A small build system with a focus on speed.
 sudo apt install -y ninja-build
 
-# [package] The Meson Build system: An open source build system meant to be both extremely fast, and, as user friendly as possible. 
+# [package:no-report] The Meson Build system: An open source build system meant to be both extremely fast, and, as user friendly as possible. 
 sudo apt install -y meson
 
-# [package] NTP: A TCP/IP protocol for synchronizing time over a network.
+# [package:no-report] NTP: A TCP/IP protocol for synchronizing time over a network.
 sudo apt install -y ntp
 
 # [package] OpenSSH: The premier connectivity tool for remote login with the SSH protocol.
@@ -113,7 +100,7 @@ sudo apt install -y owncloud-client
 # [package] Pidgin: Graphical multi-protocol instant messaging client for X.
 sudo apt install -y pidgin
 
-# [package] pydf: Colourised df(1)-clone.
+# [package:no-report] pydf: Colourised df(1)-clone.
 sudo apt install -y pydf
 
 # TODO: Already in engineer... are these needed here?
