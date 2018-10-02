@@ -52,6 +52,7 @@ Type=Internet
 
 # [resource] MedScape: Medical news, thought leader perspectives, clinical trial coverage, drug updates, journal articles, CME activities & more.
 nativefier --name "Medscape Reference" "https://reference.medscape.com/"
+
 wget https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Medscape_Logo.svg/320px-Medscape_Logo.svg.png -O /usr/share/pixmaps/medscape.png
 echo "
 [Desktop Entry]
@@ -62,3 +63,6 @@ Icon=/usr/share/pixmaps/medscape.png
 Terminal=false
 Type=Internet
 " >> /usr/share/applications/medscape.desktop
+
+# [resource] ICD-10 Codes Lookup: Tool dedicated exclusively to helping you look up ICD-10 codes.
+nativefier --name "ICD Code Lookup" "https://icdcodelookup.com/icd-10/codes"
