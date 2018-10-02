@@ -61,5 +61,6 @@ _Packages: [docs.md#clinician](https://github.com/GoTeamEpsilon/PersonaScripts/b
 _Project sub-team:_
 - QA: [Dr. Andre Millet](https://github.com/andremillet)
 - Code: [Matthew Vi](https://github.com/matthewvi)
+- Code: [Victor Kofiav](https://github.com/kofiav)
 
 License: Public Domain (CC0)
