@@ -56,7 +56,6 @@ sudo apt install -y  libqt4-dev \
                      libxslt1-dev \
                      libyaml-dev \
                      libz-dev \
-                     #linux-headers-$(uname -r) \
                      libgnome2-bin
 
 # TODO: Remove
