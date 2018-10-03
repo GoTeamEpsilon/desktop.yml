@@ -534,9 +534,6 @@ sudo npm install grunt-cli --global
 # [package] Gulp: An open-source JavaScript toolkit by Fractal Innovations and the open source community at GitHub, used as a streaming build system in front-end web development.
 sudo npm install gulp --global
 
-# [package] JSBin: A live pastebin for HTML, CSS & JavaScript and a range of processors, including SCSS, CoffeeScript, Jade and more.
-sudo npm install jsbin --global
-
 # [package] JSON Server: A tool to get a full fake REST API with zero coding in less than 30 seconds.
 sudo npm install json-server --global
 
@@ -548,9 +545,6 @@ sudo npm install local-web-server --global
 
 # [package] localtunnel: Tool that exposes your localhost to the world for easy testing and sharing.
 sudo npm install localtunnel --global
-
-# [package] Mancy: JavaScript REPL.
-sudo npm install mancy --global
 
 # [package] mithril-cli: A command-line interface to help you build the scaffolding for your next Mithril project.
 sudo npm install mithril-cli --global
