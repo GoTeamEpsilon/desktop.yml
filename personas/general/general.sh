@@ -284,5 +284,5 @@ wget https://releases.mattermost.com/desktop/4.1.2/mattermost-desktop-4.1.2-linu
 sudo dpkg -i mattermost-desktop-4.1.2-linux-amd64.deb
 rm mattermost-desktop-4.1.2-linux-amd64.deb
 
-# TODO: Remove when confident that Whatever and Autokey don't encounter dependency issues
+# Temporary fallback
 sudo apt --fix-broken install -y
