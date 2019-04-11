@@ -35,7 +35,14 @@ Installs popular console and handheld emulators, PlayOnLinux, Steam, well-known 
 
 Using [Ubuntu 18.04](https://www.ubuntu.com/) (or a derived system), install desktop.yml like so:
 
-`sh -c "$(wget https://raw.githubusercontent.com/GoTeamEpsilon/desktop.yml/master/assets/install.sh -O -)"`
+```
+wget https://github.com/GoTeamEpsilon/desktop.yml/archive/master.zip
+unzip master.zip
+mv desktop.yml-master desktop.yml
+rm master.zip
+cd desktop.yml
+sudo ./assets/install.sh
+```
 
 Install personas like so:
 ```
@@ -68,6 +75,8 @@ _PRs are welcomed to further add to the personas or create new ones!_
 #### TODOs:
 
 - [ ] Consider ways to support systems that rely on Yum, Pacman, or RPM. May need to break personas up into folders to support this. Would require some duplication, however.
+
+- [ ] Simplify install process
 
 - [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift
 
