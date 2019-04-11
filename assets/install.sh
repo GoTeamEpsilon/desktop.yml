@@ -1,12 +1,5 @@
 #!/bin/bash
 
-echo 'Downloading...'
-wget https://github.com/GoTeamEpsilon/desktop.yml/archive/master.zip
-unzip master.zip
-mv desktop.yml-master desktop.yml
-rm master.zip
-cd desktop.yml
-
 echo 'Updating System...'
 apt-get update -y > /dev/null
 add-apt-repository -y universe > /dev/null
