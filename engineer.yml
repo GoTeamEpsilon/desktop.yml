@@ -1,0 +1,29 @@
+---
+- name: Engineer persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Dia - A free diagram drawing software
+    apt: name=dia state=present update_cache=yes
+  
+  - name: FreeCAD repository
+    apt_repository:
+      repo: ppa:freecad-maintainers/freecad-stable
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: FreeCAD - A parametric 3D CAD modeler
+    apt: name=freecad state=present update_cache=yes
+
+  - name: FreeMind - A mind-mapping tool
+    command: snap install freemind
+
+    # Using this approach because there's no ppa for bionic 
+  - name: OpenSCAD - An application for creating 3D CAD objects
+    command: snap install openscad-nightly
+
+  - name: XCircuit - A tool for drawing electrical circuit diagrams
+    apt: name=xcircuit state=present update_cache=yes

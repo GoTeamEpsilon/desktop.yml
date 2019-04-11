@@ -1,66 +1,93 @@
-![IMG](./logo.png)
+### (In testing - almost ready)
 
-### _Persona Scripts are a new way to equip various kinds of computer users with exceptional software and curated resources._ ###
+![IMG](./assets/images/banner.png)
+
+### *desktop.yml - a solution for installing curated, persona-based software suites on Linux PCs*
+
+## Personas
+
+🧑 **everyday-user.yml**
+
+Installs Windows compatibility software, day-to-day utilities, cloud music players, social messengers, Slack, an antivirus solution, image editors, an office suite, note taking applications, and popular web browsers.
+
+👩‍💻 **programmer.yml**
+
+Installs source code and text editors, IDEs, scientific python, database tools, popular cloud CLI tools, compiliers, Docker, version control systems, diagramming tools, FTP and SSH tools, virtual machine managers, QA testing tools, and a multi-paned terminal emulator.
+ 
+🎨 **artist.yml**
+
+Installs animation editors, 3D object creators, photography workflows managers, graphical transcoders, raster painting tools, video editors, fractal generators, and color palette selectors.
+
+🎼 **musician.yml**
+
+Installs digital audio workstations, multi-track audio recorders, multimedia file converters, drum machines, multi-effect processors, DJing mixers, and scorewriters.
+
+⚙️ **engineer.yml**
+
+Installs diagramming tools, parametric 3D CAD modelers, mind-mapping tools, and an electrical 
+circuit diagramming solution.
+
+🎮 **gamer.yml**
+
+Installs popular console and handheld emulators, PlayOnLinux, Steam, well-known Linux games, and gamer-specific communication and streaming platforms.
 
 ## Install
 
-_(Version: 0.0.1 *beta*, codename: [Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))_
+Using [Ubuntu 18.04](https://www.ubuntu.com/) (or a derived system), install desktop.yml like so:
 
-1. Install [Ubuntu](https://www.ubuntu.com/download/desktop) or [Xubuntu](https://xubuntu.org/) _(preferred)_ **
-2. Ensure you have an active internet connection and sleep mode is off for your PC. 
-3. Execute the following command in the terminal:
+`sh -c "$(wget https://raw.githubusercontent.com/GoTeamEpsilon/desktop.yml/master/assets/install.sh -O -)"`
+
+Install personas like so:
 ```
-sh -c "$(wget https://raw.githubusercontent.com/GoTeamEpsilon/PersonaScripts/master/install.sh -O -)"
+ansible-playbook -K -l localhost everyday-user.yml # Recommended for everyone
+ansible-playbook -K -l localhost artist.yml
+ansible-playbook -K -l localhost musician.yml
+ansible-playbook -K -l localhost engineer.yml
+ansible-playbook -K -l localhost gamer.yml
+ansible-playbook -K -l localhost programmer.yml
 ```
 
-** _Any Linux operating system with `apt`, `snap` (including menu integration!), and main line Ubuntu repositories added is supported._
+## Technical
 
-## General Persona 💻
+_PRs are welcomed to further add to the personas or create new ones!_
 
-This persona is installed automatically. It comes with Windows compatibility software, popular note taking applications, cloud-music players, day-to-day utilities, messengers, and Google Chrome.
+#### Notes:
 
-_Packages: [docs.md#general](https://github.com/GoTeamEpsilon/PersonaScripts/blob/master/personas/docs.md#general)_
+  - desktop.yml is powered by [Ansible](https://www.ansible.com/) with [Snap](https://snapcraft.io/), [Apt](https://wiki.debian.org/Apt), [Pip3](https://pip.pypa.io/en/stable/), and [NPM](https://www.npmjs.com/) as the package managers.
 
-## Gamer Persona 🎮
+  - No software configurations are included in this solution - the idea is that everyone will have different configurations, especially in the programmer persona.
 
-The gamer persona comes with popular console emulators, PlayOnLinux, Steam, well-known Linux games, and gamer-specific communication tools.
+  - To add Snap, Pip, Apt, and Npm Global tasks, view programmer.yml to see example of all of these in use.
 
-_Install:_ `cd ~/Desktop/PersonaScripts/personas/gamer && ./gamer.sh`
+  - To add bash tasks, explore musician.yml for a program called Giada. Look at the bash declaration and the corresponding script file in `./assets/scripts/musician/giada.sh` - Notice how the script checks for its existance and writes the program to `/usr/local/bin/` if it doesn't exist. Note that all scripts should write to `/usr/local/bin`.
 
-_Packages: [docs.md#gamer](https://github.com/GoTeamEpsilon/PersonaScripts/blob/master/personas/docs.md#gamer)_
+  - The Snap module for Ansible is not production-ready at the time of this writing. As a result, the `command` function is used in place of a formal task declaration due to the lack of this module integration.
 
-## Engineer Persona 👩‍💻
+  - Avoid adding ppas targeted for older Ubuntu release
 
-The engineer persona is filled with editors, IDEs, scientific python, database tools, essential docker resources, cloud tools, compiliers, popular front-end framework generators, CAD packages, and much more. 
+#### TODOs:
 
-_Install:_ `cd ~/Desktop/PersonaScripts/personas/engineer && ./engineer.sh`
+- [ ] Consider ways to support systems that rely on Yum, Pacman, or RPM. May need to break personas up into folders to support this. Would require some duplication, however.
 
-_Packages: [docs.md#engineer](https://github.com/GoTeamEpsilon/PersonaScripts/blob/master/personas/docs.md#engineer)_
+- [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift
 
-## Creative Persona 🎨
+- [ ] Add the following to gamer.yml: n64 Emulator, 0.A.D (way too slow to download/install for some reason) 
 
-This persona is packed with music production software, video editors, and graphics/art tools.
+- [ ] Add the following to artist.yml: Pencil Project
 
-_Install:_ `cd ~/Desktop/PersonaScripts/personas/creative && ./creative.sh`
+- [ ] Add current user to the docker group to avoid having to use `sudo` for all commands
 
-_Packages: [docs.md#creative](https://github.com/GoTeamEpsilon/PersonaScripts/blob/master/personas/docs.md#creative)_
+- [ ] Fix `[DEPRECATION WARNING]: Instead of sudo/sudo_user, use become/become_user`
 
-## Clinician Persona ⚕️
+## Credits & License
 
-The clinician persona offers an advanced medical imaging viewer, native views of common clinicial references, and an install link to the popular OpenEMR Cloud Standard EHR.
-
-_Install:_ `cd ~/Desktop/PersonaScripts/personas/clinician && ./clinician.sh`
-
-_Packages: [docs.md#clinician](https://github.com/GoTeamEpsilon/PersonaScripts/blob/master/personas/docs.md#clinician)_
-
-
-### Credits & License
-
-[Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new). Support us on [Patreon](https://www.patreon.com/matthewvi).
+[Team Epsilon](https://github.com/GoTeamEpsilon/purpose) is a volunteer team of like-minded developers who strive to positively contribute to open source through code, education, and kindness. [Join us](https://github.com/GoTeamEpsilon/purpose/issues/new). Support us on [Patreon](https://www.patreon.com/matthewvita).
 
 _Project sub-team:_
 - QA: [Dr. Andre Millet](https://github.com/andremillet)
-- Code: [Matthew Vi](https://github.com/matthewvi)
+- Code: [Matthew Vita](https://github.com/matthewvita)
 - Code: [Victor Kofiav](https://github.com/kofiav)
 
-License: Public Domain (CC0)
+Font Credit: Geo Sans Light
+
+License: [Public Domain (CC0)](./assets/legal/LICENSE)

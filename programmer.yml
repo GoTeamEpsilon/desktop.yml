@@ -1,0 +1,321 @@
+---
+- name: Programmer persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Altair - A GraphQL client
+    command: snap install altair 
+
+  - name: Anaconda - A distribution for performing Python and R data science and machine learning
+    command: bash ./assets/scripts/programmer/anaconda.sh 
+
+  - name: Android Studio - An integrated development environment for Android applications
+    command: snap install android-studio --classic
+
+  - name: Atom - A source code editor
+    command: snap install atom --classic
+
+  - name: AWS Command Line - A CLI for Amazon Web Services
+    pip: name=awscli 
+
+  - name: bcal - A byte calculator for unit and address conversion
+    apt: name=bcal state=present update_cache=yes
+
+  - name: Clang - A frontend for C and related programming languages
+    apt: name=clang state=present update_cache=yes
+
+  - name: CLISP - A dialect of the Lisp programming language
+    apt: name=clisp state=present update_cache=yes
+
+  - name: Code Blocks - An integrated development environment
+    apt: name=codeblocks state=present update_cache=yes
+
+  - name: CVS - A version control system
+    apt: name=cvs state=present update_cache=yes
+
+  - name: Dia - An application for drawing diagrams
+    apt: name=dia state=present update_cache=yes
+
+  - name: DBeaver Community repository
+    apt_repository:
+      repo: ppa:serge-rider/dbeaver-ce
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: DBeaver Community - An SQL client and database administration tool
+    apt: name=dbeaver-ce state=present update_cache=yes
+
+  - name: Docker key
+    shell: "curl -sSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -"
+    args:
+      warn: no
+
+  - name: Docker repository
+    apt_repository:
+      repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Docker - A program that performs operating-system-level virtualization
+    apt: name=docker-ce state=present update_cache=yes
+
+  - name: Docker Compose - A tool for defining and running multi-container Docker applications
+    command: bash ./assets/scripts/programmer/docker-compose.sh
+
+  - name: Doctl - A CLI for DigitalOcean services
+    command: snap install doctl 
+
+  - name: Eclipse - An integrated development environment
+    apt: name=eclipse state=present update_cache=yes
+
+  - name: Emacs repository
+    apt_repository:
+      repo: ppa:kelleyk/emacs
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Emacs - A text editor
+    apt: name=emacs25 state=present update_cache=yes
+
+  - name: FileZilla - An FTP application
+    apt: name=filezilla state=present update_cache=yes
+
+  - name: FreeMind - A mind-mapping tool
+    command: snap install freemind
+
+  - name: Free Pascal - The Pascal programming language
+    apt: name=fp-compiler state=present update_cache=yes
+
+  - name: Fortran - The Fortran programming language
+    apt: name=gfortran state=present update_cache=yes
+
+  - name: F Sharp - The F Sharp programming language
+    apt: name=fsharp state=present update_cache=yes
+
+  - name: GCC - The GNU compiler collection for various programming languages
+    apt: name=gcc state=present update_cache=yes
+
+  - name: GDB - A portable debugger
+    apt: name=gdb state=present update_cache=yes
+
+  - name: GHex - A hex editor
+    command: snap install ghex-udt 
+
+  - name: GNOME Boxes - A tool to run QEMU-KVM virtual machines
+    apt: name=gnome-boxes state=present update_cache=yes
+
+  - name: GParted - A partition-editing application
+    apt: name=gparted state=present update_cache=yes
+
+  - name: Groovy - The Groovy programming language
+    apt: name=groovy state=present update_cache=yes
+
+  - name: Go - The Go programming language
+    command: snap install go --classic
+
+  - name: gobjc - The Objective-C programming language
+    apt: name=gobjc state=present update_cache=yes
+
+  - name: Google Cloud SDK - Tools for the Google cloud platform
+    command: snap install google-cloud-sdk --classic
+
+  - name: Haskell - The Haskell programming language
+    apt: name=ghc state=present update_cache=yes
+
+  - name: Heroku - A CLI for Heroku
+    command: snap install heroku --classic
+
+  - name: JMeter - A load testing tool for analyzing and measuring services
+    apt: name=jmeter state=present update_cache=yes
+
+  - name: jq - A tool like Sed for JSON data
+    apt: name=jq state=present update_cache=yes
+
+  - name: JRE - The Java Runtime Environment
+    apt: name=default-jre state=present update_cache=yes
+  
+  - name: Julia - The Julia programming language
+    command: snap install julia
+
+  - name: Kotlin - The Kotlin programming language
+    command: snap install kotlin --classic
+
+  - name: Kubectl - A CLI for Kubernetes clusters
+    command: snap install kubectl --classic
+
+  - name: libvirt - A toolkit to manage virtualization platforms
+    apt: name=libvirt-bin state=present update_cache=yes
+
+  - name: local-web-server - A web server for development purposes
+    npm: name=local-web-server global=yes
+
+  - name: Lua - The Lua programming language
+    apt: name=lua5.2 state=present update_cache=yes
+
+  - name: LXD - A system container manager
+    command: snap install lxd 
+
+  - name: Meld - A visual diff and merge tool
+    apt: name=meld state=present update_cache=yes
+
+  - name: Mercurial - A source control management tool
+    apt: name=mercurial state=present update_cache=yes
+
+  - name: MIT Scheme - The MIT Scheme programming language
+    apt: name=mit-scheme state=present update_cache=yes
+
+  - name: MyCLI - A CLI interface for MySQL, MariaDB, and Percona
+    pip: name=mycli 
+
+  - name: MySQL Workbench - A visual tool for MySQL database management
+    apt: name=mysql-workbench state=present update_cache=yes
+
+  - name: Nano - An enhanced Pico clone
+    apt: name=nano state=present update_cache=yes
+
+  - name: NetBeans - An integrated development environment
+    apt: name=netbeans state=present update_cache=yes
+
+  - name: Neovim - An extension of Vim
+    apt: name=neovim state=present update_cache=yes
+
+  - name: Nim - The Nim programming language
+    apt: name=nim state=present update_cache=yes
+
+  - name: OCaml - The OCaml programming language
+    apt: name=ocaml state=present update_cache=yes
+
+  - name: Octave - The Octave programming language
+    apt: name=octave state=present update_cache=yes
+
+  - name: Open Cobol - The COBOL programming language
+    apt: name=open-cobol state=present update_cache=yes
+
+  - name: OpenJDK 8 - The Java 8 Development Kit
+    apt: name=openjdk-8-jdk state=present update_cache=yes
+
+  - name: OpenVPN - A client for connecting to an OpenVPN VPN 
+    apt: name=openvpn state=present update_cache=yes
+
+  - name: Parallel - A tool for executing jobs in parallel
+    apt: name=parallel state=present update_cache=yes
+
+  - name: Perl 5 - The Perl 5 programming language
+    apt: name=perl state=present update_cache=yes
+
+  - name: Perl 6 - The Perl 6 programming language
+    apt: name=perl6 state=present update_cache=yes
+
+  - name: pgAdmin - A visual tool for PostgreSQL database management
+    apt: name=pgadmin3 state=present update_cache=yes
+
+  - name: PHP - The PHP programming language
+    apt: name=php state=present update_cache=yes
+
+  - name: Postman - An API development environment
+    command: snap install postman 
+    
+  - name: PowerShell - The PowerShell scripting language
+    command: snap install powershell --classic
+
+  - name: PuTTY - An SSH and telnet client
+    apt: name=putty state=present update_cache=yes
+
+  - name: QEMU - A machine emulator and virtualizer
+    apt: name=qemu state=present update_cache=yes
+
+  - name: QEMU KVM - A package that enables qemu-kvm virtualization
+    apt: name=qemu-kvm state=present update_cache=yes
+
+  - name: R - The R programming language
+    apt: name=r-base state=present update_cache=yes
+
+  - name: Racket repository
+    apt_repository:
+      repo: ppa:plt/racket
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Racket - The Racket programming language
+    apt: name=racket state=present update_cache=yes
+
+  - name: rsync - A utility for transferring and synchronizing files
+    apt: name=rsync state=present update_cache=yes
+
+  - name: Ruby - The Ruby programming language
+    command: snap install ruby --classic
+
+  - name: Rust - The Rust programming language
+    apt: name=rustc state=present update_cache=yes
+
+  - name: Scala - The Scala programming language
+    apt: name=scala state=present update_cache=yes
+
+  - name: Screen - A terminal multiplexer
+    apt: name=screen state=present update_cache=yes
+
+  - name: SQLite - A self-contained SQL database
+    apt: name=sqlite3 state=present update_cache=yes
+
+  - name: SSH - A tool to securely access remote computers
+    apt: name=ssh state=present update_cache=yes
+
+  - name: Sublime Text - A text editor
+    command: snap install sublime-text --classic 
+
+  - name: Subversion - A software versioning and revision control system
+    apt: name=subversion state=present update_cache=yes
+
+  - name: Tcl - The Tcl programming language
+    apt: name=tcl state=present update_cache=yes
+
+  - name: Tcl Dev - The Tcl programming language development toolkit
+    apt: name=tcl-dev state=present update_cache=yes
+
+  - name: Terminator - A terminal emulator
+    apt: name=terminator state=present update_cache=yes
+
+  - name: Terraform - A tool for creating, changing, and improving infrastructure
+    command: bash ./assets/scripts/programmer/terraform.sh 
+
+  - name: Thefuck - A CLI application that corrects console commands
+    pip: name=thefuck 
+
+  - name: tmux - A terminal multiplexer
+    apt: name=tmux state=present update_cache=yes
+
+  - name: tree - A recursive directory listing program
+    apt: name=tree state=present update_cache=yes
+
+  - name: Troposphere - A library to create AWS CloudFormation descriptions
+    pip: name=troposphere 
+
+  - name: TypeScript - The TypeScript programming language
+    npm: name=typescript global=yes
+
+  - name: dos2unix - A tool for converting line breaks between Unix, MacOS, and DOS
+    apt: name=dos2unix state=present update_cache=yes
+
+  - name: Unzip - A tool that extracts files from ZIP archives
+    apt: name=unzip state=present update_cache=yes
+
+  - name: Vagrant - Tool for managing virtual software development environments
+    apt: name=vagrant state=present update_cache=yes
+
+  - name: Valac - The Valac programming language
+    apt: name=valac state=present update_cache=yes
+
+  - name: Vim - A text editor
+    apt: name=vim state=present update_cache=yes
+
+  - name: Virt-Manager - A virtual machine manager
+    apt: name=virt-manager state=present update_cache=yes
+
+  - name: Visual Studio Code - A source code editor
+    command: snap install vscode --classic

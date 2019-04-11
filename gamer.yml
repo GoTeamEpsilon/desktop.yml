@@ -1,0 +1,124 @@
+---
+- name: Gamer persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  # Too slow to download/install!
+  # - name: 0 A.D. repository
+  #   apt_repository:
+  #     repo: 'ppa:wfg/0ad'
+  #     state: present
+  #     update_cache: yes
+  #   sudo: yes
+
+  # - name: 0 A.D. - A real-time strategy game
+  #   apt: name=0ad state=present update_cache=yes
+
+  - name: Aisleriot - A solitaire card game
+    apt: name=aisleriot state=present update_cache=yes
+
+  - name: The Battle for Wesnoth - A turn-based strategy and high fantasy game
+    apt: name=wesnoth state=present update_cache=yes
+
+  - name: Cube 2 Sauerbraten - A multiplayer and singleplayer first person shooter
+    apt: name=sauerbraten state=present update_cache=yes
+
+  - name: Discord - A VoIP application designed for video gaming
+    command: snap install discord
+
+  - name: Dolphin Emulator repository
+    apt_repository:
+      repo: 'ppa:dolphin-emu/ppa'
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Dolphin Emulator - A GameCube and Wii emulator 
+    apt: name=dolphin-emu state=present update_cache=yes force=yes
+
+  - name: DOSBox-X - A solution to run old DOS games
+    command: snap install dosbox-x
+
+  - name: Eternal Lands - A 3D fantasy multiplayer online role playing game
+    command: snap install eternallands
+
+  - name: Freeciv - An empire building strategy game
+    apt: name=freeciv state=present update_cache=yes
+
+  - name: Freedoom - A series of Doom engine games
+    apt: name=freedoom state=present update_cache=yes
+
+  - name: Frets On Fire - A guitar music game
+    apt: name=fretsonfire state=present update_cache=yes
+
+  - name: Foobillard++ - A billards simulation video game 
+    command: snap install foobillard-plus
+
+  - name: Kapman - A clone of Pac-Man
+    command: snap install kapman
+
+  - name: mGBA - A Gameboy emulator
+    command: snap install mgba
+
+  - name: Minetest - A voxel game
+    apt: name=minetest state=present update_cache=yes
+
+  - name: Mumble repository
+    apt_repository:
+      repo: 'ppa:mumble/release'
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Mumble - Servers for gamers all over the world
+    apt: name=mumble state=present update_cache=yes
+
+  - name: Neverball - A puzzle and action game
+    apt: name=neverball state=present update_cache=yes
+
+  - name: OpenArena - A first person shooter and clone of Quake III Arena
+    apt: name=openarena state=present update_cache=yes
+
+  - name: OpenTTD - A simulator game based on Transport Tycoon Deluxe
+    apt: name=openttd state=present update_cache=yes
+
+  - name: Pingus - A Lemmings-like puzzle game
+    apt: name=pingus state=present update_cache=yes
+
+  - name: PlayOnLinux - Allows you to play games on Linux
+    apt: name=playonlinux state=present update_cache=yes
+
+  - name: Quadrapassel - A Tetris game
+    apt: name=quadrapassel state=present update_cache=yes
+
+  - name: Red Eclipse - An arena shooter
+    command: bash ./assets/scripts/gamer/redeclipse.sh
+
+  - name: Slash'EM - A variant of the roguelike game NetHack
+    apt: name=slashem state=present update_cache=yes
+
+  - name: Steam - A digital distribution platform for video games
+    apt: name=steam state=present update_cache=yes
+
+  - name: SuperTuxKart - A 3D arcade racing game
+    apt: name=supertuxkart state=present update_cache=yes
+
+  - name: TORCS - A 3D car racing simulator
+    apt: name=torcs state=present update_cache=yes
+
+  - name: TrackMania Forever - An online racing game
+    command: snap install tmnationsforever
+
+  - name: Twitch - A live streaming platform for gamers
+    command: snap install gnome-twitch --beta
+
+  - name: Wine64 - An engine for running Windows applications
+    apt: name=wine64 state=present update_cache=yes
+
+  - name: Xonotic - An arena-style first person shooter game
+    command: snap install xonotic 
+
+  - name: Yabause - A Sega Saturn emulator
+    apt: name=yabause state=present update_cache=yes

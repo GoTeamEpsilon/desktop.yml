@@ -1,0 +1,74 @@
+---
+- name: Musician persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Audacity - A multi-track audio editor and recorder
+    apt: name=audacity state=present update_cache=yes
+
+  - name: FFmpeg - A software suite for handling multimedia files and streams
+    apt: name=ffmpeg state=present update_cache=yes
+
+  - name: Giada - A portable virtual loop machine
+    command: bash ./assets/scripts/musician/giada.sh
+
+  - name: Guitarix - A virtual guitar amplifier
+    apt: name=guitarix state=present update_cache=yes
+
+  - name: Hydrogen - A drum machine
+    apt: name=hydrogen state=present update_cache=yes
+
+  - name: JACK Tools - A collection of tools for the JACK Audio Connection Kit
+    apt: name=jack-tools state=present update_cache=yes
+
+  - name: LAME - A high quality MPEG Audio Layer III encoder
+    apt: name=lame state=present update_cache=yes
+
+  - name: LMMS - A digital audio workstation
+    apt: name=lmms state=present update_cache=yes
+
+  - name: Mixxx repository
+    apt_repository:
+      repo: ppa:mixxx/mixxx
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Mixxx - An application for DJing
+    apt: name=mixxx state=present update_cache=yes
+
+  - name: MuseScore repository
+    apt_repository:
+      repo: ppa:mscore-ubuntu/mscore-stable
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: MuseScore - A scorewriting application
+    apt: name=musescore state=present update_cache=yes
+
+  - name: PulseAudio - A network-capable sound server program
+    apt: name=pulseaudio state=present update_cache=yes
+
+  - name: QjackCtl - A user interface for controlling the JACK sound server
+    apt: name=qjackctl state=present update_cache=yes
+
+  - name: Qtractor - A recorder and digital audio workstation application
+    apt: name=qtractor state=present update_cache=yes
+
+  - name: Rakarrack - A multi-effects processor emulating a guitar effects pedalboard
+    apt: name=rakarrack state=present update_cache=yes
+
+  - name: Rosegarden - An audio, MIDI, and score editing and sequencing application
+    apt: name=rosegarden state=present update_cache=yes
+
+  - name: Transitions DJ - An application for mixing music and live DJing 
+    command: snap install transitionsdj
+
+  - name: xwax - A digital vinyl system
+    apt: name=xwax state=present update_cache=yes
+
+  - name: Yoshimi - A software synthesizer
+    apt: name=yoshimi state=present update_cache=yes

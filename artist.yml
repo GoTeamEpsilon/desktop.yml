@@ -1,0 +1,121 @@
+---
+- name: Artist persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: Animation Maker - An application for creating keyframe animated movies
+    command: snap install animationmaker 
+
+  - name: Blender - A 3D creation suite
+    command: snap install blender --classic
+
+  - name: darktable - A photography workflow application
+    apt: name=darktable state=present update_cache=yes
+
+  - name: digiKam - An image organizer and tag editor
+    apt: name=digikam state=present update_cache=yes
+
+  - name: Gifcurry - A video-to-GIF maker
+    command: snap install gifcurry
+
+  - name: GIMP - An image editor
+    apt: name=gimp state=present update_cache=yes
+
+  - name: gLabels - A program for creating labels and business cards
+    apt: name=glabels state=present update_cache=yes
+
+  - name: Gpick - A color picker and palette editing tool
+    apt: name=gpick state=present update_cache=yes
+
+  - name: Green Recorder repository
+    apt_repository:
+      repo: ppa:fossproject/ppa
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Green Recorder - A screen recorder
+    apt: name=green-recorder state=present update_cache=yes
+
+  - name: HandBrake GTK repository
+    apt_repository:
+      repo: ppa:stebbins/handbrake-releases
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: HandBrake GTK - A graphical transcoder for digital video files
+    apt: name=handbrake-gtk state=present update_cache=yes
+
+  - name: HandBrake CLI repository
+    apt_repository:
+      repo: ppa:stebbins/handbrake-releases
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: HandBrake CLI - A CLI transcoder for digital video files
+    apt: name=handbrake-cli state=present update_cache=yes
+
+  - name: ImageMagick - A tool to create, edit, and convert bitmap images
+    apt: name=imagemagick state=present update_cache=yes
+
+  - name: Inkscape - A vector graphics application
+    command: snap install inkscape --classic
+
+  - name: krita repo
+    apt_repository:
+      repo: 'ppa:kritalime/ppa'
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Krita - A raster graphics editor for painting and animation
+    apt: name=krita state=present update_cache=yes
+
+  - name: OBS Studio repository
+    apt_repository:
+      repo: ppa:obsproject/obs-studio
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: OBS Studio - A streaming and recording program
+    apt: name=obs-studio state=present update_cache=yes
+
+  - name: OpenShot QT repository
+    apt_repository:
+      repo: ppa:openshot.developers/ppa
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: OpenShot QT - A video editor
+    apt: name=openshot-qt state=present update_cache=yes
+
+  - name: Shotcut - A video editor
+    command: snap install shotcut --classic
+
+  - name: Shotwell repository
+    apt_repository:
+      repo: ppa:yg-jensge/shotwell
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Shotwell - An image organizer for personal photo management
+    apt: name=shotwell state=present update_cache=yes
+
+  - name: Tux Paint - A raster graphics editor geared towards young children
+    apt: name=tuxpaint state=present update_cache=yes
+
+  - name: VLC - A multimedia player
+    command: snap install vlc 
+
+  - name: VidCutter - A media cutter and joiner
+    command: snap install vidcutter 
+
+  - name: Xfractint - A fractal generator
+    apt: name=xfractint state=present update_cache=yes

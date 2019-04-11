@@ -1,0 +1,149 @@
+---
+- name: Everyday User persona
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: ARandR - A graphical tool to manage screens
+    apt: name=arandr state=present update_cache=yes
+
+  - name: Auryo - A SoundCloud client
+    command: snap install auryo 
+
+  - name: Blueman - A graphical bluetooth manager
+    apt: name=blueman state=present update_cache=yes
+
+  - name: Brasero - A disc-burning program
+    apt: name=brasero state=present update_cache=yes
+
+  - name: Caprine - An unofficial Facebook Messenger application
+    command: snap install caprine 
+
+  - name: Chromium - A web browser
+    command: snap install chromium 
+
+  - name: ClamAV - An antivirus engine for detecting malicious threats
+    apt: name=clamav state=present update_cache=yes
+
+  - name: ClamTk - A CLI virus scanner
+    apt: name=clamtk state=present update_cache=yes
+
+  - name: ClipIt - A clipboard manager
+    apt: name=clipit state=present update_cache=yes
+
+  - name: Easy Disk Cleaner - A cleaner of large files on hard drives
+    command: snap install easy-disk-cleaner 
+
+  - name: Evince - A document viewer for multiple document formats
+    command: snap install evince
+
+  - name: Firefox - A web browser
+    apt: name=firefox state=present update_cache=yes
+
+  - name: Freeplane - A solution for creating mindmaps
+    apt: name=freeplane state=present update_cache=yes
+
+  - name: FocusWriter - A distraction-free writing environment
+    apt: name=focuswriter state=present update_cache=yes
+
+  - name: GIMP - An image editor
+    command: snap install gimp 
+
+  - name: Grive - repository
+    apt_repository:
+      repo: ppa:nilarimogard/webupd8
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Grive - A Google Drive client
+    apt: name=grive state=present update_cache=yes
+
+  - name: Gnome Orca - An accessible screen reader
+    apt: name=gnome-orca state=present update_cache=yes
+
+  - name: Google Play Music Desktop Player - A desktop player for Google Play Music
+    command: snap install google-play-music-desktop-player 
+
+  - name: Google Chrome - An internet browser
+    command: bash ./assets/scripts/everyday-user/google-chrome.sh
+
+  - name: Imagenes - A Google Photos application
+    command: snap install imagenes 
+
+  - name: Instagraph - An unofficial Instagram client
+    command: snap install instagraph 
+
+  - name: KeePassXC - A password manager
+    command: snap install keepassxc 
+
+  - name: LibreOffice - An office suite
+    apt: name=libreoffice state=present update_cache=yes
+
+  - name: Ncdu - A disk usage analyzer
+    apt: name=ncdu state=present update_cache=yes
+
+  - name: Pidgin - A graphical multi-protocol instant messaging client
+    apt: name=pidgin state=present update_cache=yes
+
+  - name: Redshift - An engine that adjusts screen color temperature according to time
+    apt: name=redshift state=present update_cache=yes
+
+  - name: Redshift GTK - A graphical tool to adjust the screen color temperature according to time
+    apt: name=redshift-gtk state=present update_cache=yes
+
+  - name: Scribus repository
+    apt_repository:
+      repo: ppa:scribus/ppa
+      state: present
+      update_cache: yes
+    sudo: yes
+
+  - name: Scribus - A desktop publishing application
+    apt: name=scribus-ng state=present update_cache=yes
+
+  - name: Simple Scan - A tool to capture images using image scanners
+    command: snap install simple-scan --classic
+
+  - name: SimpleScreenRecorder - A screen recorder
+    apt: name=simplescreenrecorder state=present update_cache=yes
+
+  - name: Skype - A telecommunications software product
+    command: snap install skype --classic
+
+  - name: Slack - A cloud-based team collaboration tool
+    command: snap install slack --classic
+
+  - name: Spotify - A Spotify client
+    command: snap install spotify 
+
+  - name: Ssb-creator-gtk - A tool for creating startup discs
+    apt: name=usb-creator-gtk state=present update_cache=yes
+
+  - name: Thunderbird - An email client
+    apt: name=thunderbird state=present update_cache=yes
+
+  - name: Tomboy - A note-taking application
+    apt: name=tomboy state=present update_cache=yes
+
+  - name: Torbrowser - A web browser that anonymizes your web traffic
+    apt: name=torbrowser-launcher state=present update_cache=yes
+
+  - name: Transmission - A BitTorrent client
+    apt: name=transmission state=present update_cache=yes
+
+  - name: VLC - A multimedia player
+    command: snap install vlc 
+
+  - name: WhatsApp Desktop - A WhatsApp client
+    command: snap install whatsdesk
+
+  - name: Wine64 - An engine for running Windows applications
+    apt: name=wine64 state=present update_cache=yes
+
+  - name: Xournal - An application for notetaking and sketching using a stylus
+    apt: name=xournal state=present update_cache=yes
+
+  - name: youtube-dl - A command-line program to download videos from YouTube.com
+    apt: name=youtube-dl state=present update_cache=yes
