@@ -33,7 +33,12 @@ Installs popular console and handheld emulators, PlayOnLinux, Steam, well-known 
 
 ## Install
 
-Using [Ubuntu 18.04](https://www.ubuntu.com/) (or a derived system), install desktop.yml like so:
+**Currently supported systems:**
+- [Ubuntu 18.04](https://www.ubuntu.com/)
+- [KUbuntu 18.04](https://kubuntu.org/)
+- [XUbuntu 18.04](https://xubuntu.org/)
+
+*Install desktop.yml like so:*
 
 ```
 wget https://github.com/GoTeamEpsilon/desktop.yml/archive/master.zip
@@ -47,11 +52,12 @@ sudo ./assets/install.sh
 Install personas like so:
 ```
 ansible-playbook -K -l localhost everyday-user.yml # Recommended for everyone
+ansible-playbook -K -l localhost programmer.yml
 ansible-playbook -K -l localhost artist.yml
 ansible-playbook -K -l localhost musician.yml
 ansible-playbook -K -l localhost engineer.yml
 ansible-playbook -K -l localhost gamer.yml
-ansible-playbook -K -l localhost programmer.yml
+
 ```
 
 ## Technical
@@ -78,7 +84,9 @@ _PRs are welcomed to further add to the personas or create new ones!_
 
 - [ ] Simplify install process
 
-- [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift
+- [ ] Consider adding desktop entries + logos for /usr/local/bin programs
+
+- [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift, Wireshark
 
 - [ ] Add the following to gamer.yml: n64 Emulator, 0.A.D (way too slow to download/install for some reason) 
 
