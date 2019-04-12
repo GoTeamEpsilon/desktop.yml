@@ -140,7 +140,7 @@
     apt: name=default-jre state=present update_cache=yes
   
   - name: Julia - The Julia programming language
-    command: snap install julia
+    command: snap install julia-stable
 
   - name: Kotlin - The Kotlin programming language
     command: snap install kotlin --classic
