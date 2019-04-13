@@ -4,7 +4,7 @@
 
 ## About
 
-desktop.yml provides various types of computer users capable software on a fresh or existing install of Ubuntu Linux or related system (see [here](#install) for capable systems. Browse the personas and their descriptions below to get an idea of the great software packages desktop.yml will install.
+desktop.yml provides various types of computer users capable software on a fresh or existing install of Ubuntu Linux or related system (see [here](#install) for compatible systems). Browse the personas and their descriptions below to get an idea of the great software packages desktop.yml will install.
 
 ## Personas
 
@@ -52,7 +52,7 @@ cd desktop.yml
 sudo ./assets/install.sh
 ```
 
-Install personas like so:
+With "sleep mode" turned off, install the personas like so:
 ```
 ansible-playbook -K -l localhost everyday-user.yml # Recommended for everyone
 ansible-playbook -K -l localhost programmer.yml
