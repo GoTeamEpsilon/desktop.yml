@@ -52,7 +52,8 @@ cd desktop.yml
 sudo ./assets/install.sh
 ```
 
-With "sleep mode" turned off, install the personas like so:
+*With "sleep mode" turned off, install the personas like so:*
+
 ```
 ansible-playbook -K -l localhost everyday-user.yml # Recommended for everyone
 ansible-playbook -K -l localhost programmer.yml
