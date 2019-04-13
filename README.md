@@ -1,8 +1,10 @@
-### (In testing - almost ready)
-
 ![IMG](./assets/images/banner.png)
 
 ### *desktop.yml - a solution for installing curated, persona-based software suites on Linux PCs*
+
+## About
+
+desktop.yml provides various types of computer users capable software on a fresh or existing install of Ubuntu Linux or related system (see [here](#install) for capable systems. Browse the personas and their descriptions below to get an idea of the great software packages desktop.yml will install.
 
 ## Personas
 
@@ -37,8 +39,9 @@ Installs popular console and handheld emulators, PlayOnLinux, Steam, well-known 
 - [Ubuntu 18.04](https://www.ubuntu.com/)
 - [KUbuntu 18.04](https://kubuntu.org/)
 - [XUbuntu 18.04](https://xubuntu.org/)
+- [Ubuntu MATE 18.04](https://ubuntu-mate.org/)
 
-*Install desktop.yml like so:*
+*Install desktop.yml (line-by-line) like so:*
 
 ```
 wget https://github.com/GoTeamEpsilon/desktop.yml/archive/master.zip
@@ -57,7 +60,6 @@ ansible-playbook -K -l localhost artist.yml
 ansible-playbook -K -l localhost musician.yml
 ansible-playbook -K -l localhost engineer.yml
 ansible-playbook -K -l localhost gamer.yml
-
 ```
 
 ## Technical
@@ -78,6 +80,14 @@ _PRs are welcomed to further add to the personas or create new ones!_
 
   - Avoid adding ppas targeted for older Ubuntu release
 
+#### Unsupported Systems:
+
+The Following Ubuntu-based systems do not work correctly with this solution. Below is a list of the OSes and the issue:
+
+- LUbuntu 18.04 - Didn't install typical packages that are supplied by Bionic
+- Zorin OS 12.4 - The installer keep yielding `could not get lock`, despite a fresh install
+- Linux Mint 19.1 - Apt was pointing at "Tessa" release as opposed to Bionic, which lead to packages not being found
+
 #### TODOs:
 
 - [ ] Consider ways to support systems that rely on Yum, Pacman, or RPM. May need to break personas up into folders to support this. Would require some duplication, however.
@@ -85,6 +95,8 @@ _PRs are welcomed to further add to the personas or create new ones!_
 - [ ] Simplify install process
 
 - [ ] Consider adding desktop entries + logos for /usr/local/bin programs
+
+- [ ] Test on Elementary OS 5.0 Juno
 
 - [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift, Wireshark
 
