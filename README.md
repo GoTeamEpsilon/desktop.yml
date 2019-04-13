@@ -88,25 +88,17 @@ The Following Ubuntu-based systems do not work correctly with this solution. Bel
 - Zorin OS 12.4 - The installer keep yielding `could not get lock`, despite a fresh install
 - Linux Mint 19.1 - Apt was pointing at "Tessa" release as opposed to Bionic, which lead to packages not being found
 
-#### TODOs:
+#### Top TODOs:
 
-- [ ] Consider ways to support systems that rely on Yum, Pacman, or RPM. May need to break personas up into folders to support this. Would require some duplication, however.
+- [Consider ways to support systems that rely on Yum, Pacman, or RPM.](https://github.com/GoTeamEpsilon/desktop.yml/issues/53)
 
-- [ ] Simplify install process
+- [Simplify install process](https://github.com/GoTeamEpsilon/desktop.yml/issues/54)
 
-- [ ] Consider adding desktop entries + logos for /usr/local/bin programs
+- [Consider adding desktop entries + logos for /usr/local/bin programs](https://github.com/GoTeamEpsilon/desktop.yml/issues/55)
 
-- [ ] Test on Elementary OS 5.0 Juno
+- [Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift, Wireshark](https://github.com/GoTeamEpsilon/desktop.yml/issues/57)
 
-- [ ] Add the following to programmer.yml: Latest Java JDK, Erlang, Elixir, Minikube, Dropbox, Swift, Wireshark
-
-- [ ] Add the following to gamer.yml: n64 Emulator, 0.A.D (way too slow to download/install for some reason) 
-
-- [ ] Add the following to artist.yml: Pencil Project
-
-- [ ] Add current user to the docker group to avoid having to use `sudo` for all commands
-
-- [ ] Fix `[DEPRECATION WARNING]: Instead of sudo/sudo_user, use become/become_user`
+- [Add current user to the docker group to avoid having to use `sudo` for all commands](https://github.com/GoTeamEpsilon/desktop.yml/issues/60)
 
 ## Credits & License
 
