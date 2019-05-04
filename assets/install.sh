@@ -10,6 +10,7 @@ apt-get install -qq -y apt-transport-https \
                        cmake \
                        curl \
                        build-essential \
+                       aptitude \
                        dirmngr \
                        make \
                        autoconf \
