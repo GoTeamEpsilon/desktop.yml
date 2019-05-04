@@ -67,7 +67,7 @@ ___________
 
 Note: If you are running the OS in a Virtual Machine, it is best to set the system clock as like so:
 
-`sudo date --set "27 Jun 2014 1:17:00"`
+`sudo date --set "27 Jun 2014 1:17:00" && sudo apt update`
 
 ...Doing so will avoid `Updates for this repository will not be applied` installation errors.
 
