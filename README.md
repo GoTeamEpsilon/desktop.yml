@@ -63,6 +63,14 @@ ansible-playbook -K -l localhost engineer.yml
 ansible-playbook -K -l localhost gamer.yml
 ```
 
+___________
+
+Note: If you are running the OS in a Virtual Machine, it is best to set the system clock as like so:
+
+`sudo date --set "27 Jun 2014 1:17:00"`
+
+...Doing so will avoid `Updates for this repository will not be applied` installation errors.
+
 ## Technical
 
 _PRs are welcomed to further add to the personas or create new ones!_
