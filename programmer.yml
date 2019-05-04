@@ -181,9 +181,6 @@
   - name: NetBeans - An integrated development environment
     apt: name=netbeans state=present update_cache=yes
 
-  - name: Neovim - An extension of Vim
-    apt: name=neovim state=present update_cache=yes
-
   - name: Nim - The Nim programming language
     apt: name=nim state=present update_cache=yes
 
