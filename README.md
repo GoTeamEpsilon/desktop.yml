@@ -41,6 +41,10 @@ Installs popular console and handheld emulators, PlayOnLinux, Steam, well-known 
 - [XUbuntu 18.04](https://xubuntu.org/)
 - [Ubuntu MATE 18.04](https://ubuntu-mate.org/)
 
+(**For Virtual Machine Users, first see: "VM Users" below**)
+
+___________
+
 *Install desktop.yml (line-by-line) like so:*
 
 ```
@@ -62,14 +66,15 @@ ansible-playbook -K -l localhost musician.yml
 ansible-playbook -K -l localhost engineer.yml
 ansible-playbook -K -l localhost gamer.yml
 ```
-
 ___________
 
-Note: If you are running the OS in a Virtual Machine, it is best to set the system clock as like so:
+### VM Users
 
-`sudo date --set "27 Jun 2014 1:17:00" && sudo apt update`
+If you are running the OS in a Virtual Machine, it is best to set the system clock as like so:
 
-...Doing so will avoid `Updates for this repository will not be applied` installation errors.
+`sudo date --set "27 Jun 2019 1:17:00" && sudo apt update`
+
+...Doing so will avoid `Updates for this repository will not be applied` installation errors. Once done, you may proceed in the personas installations
 
 ## Technical
 
